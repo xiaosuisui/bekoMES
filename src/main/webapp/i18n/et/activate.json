@@ -1,0 +1,9 @@
+{
+    "activate": {
+        "title": "etkinleştirme",
+        "messages": {
+            "success": "<strong>Kullanıcı hesabınız etkinleştirildi.</strong> Lütfen <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">giriş yap</a>.",
+            "error": "<strong>Kullanıcınız etkinleştirilemedi.</strong> Kayıt olmak için lütfen kayıt formunu kullanınız.."
+        }
+    }
+}

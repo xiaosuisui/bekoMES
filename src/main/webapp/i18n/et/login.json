@@ -1,0 +1,20 @@
+{
+    "login": {
+        "title": "giriş yap",
+        "form": {
+            "password": "Parola",
+            "password.placeholder": "Şifreniz",
+            "username.placeholder":"kullanıcı adı",
+            "rememberme": "Beni hatırla",
+            "button": "giriş yap"
+        },
+        "messages": {
+            "error": {
+                "authentication": "<strong>Oturum açılamadı!</strong> Lütfen kimlik bilgilerinizi kontrol edin ve tekrar deneyin."
+            }
+        },
+        "password" : {
+            "forgot": "Şifreni mi unuttun?"
+        }
+    }
+}

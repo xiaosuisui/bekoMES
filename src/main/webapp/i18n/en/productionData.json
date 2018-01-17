@@ -1,0 +1,28 @@
+{
+    "bekoproApp": {
+        "productionData" : {
+            "home": {
+                "title": "Production Data",
+                "createLabel": "Add",
+                "editLabel":"Edit",
+                "deleteLabel":"Delete",
+                "createOrEditLabel": "Create or edit a Production Data"
+            },
+            "created": "A new Production Data is created with identifier {{ param }}",
+            "updated": "A Production Data is updated with identifier {{ param }}",
+            "deleted": "A Production Data is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Production Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Production Data"
+            },
+            "qrcode": "Qrcode",
+            "operator": "Operator",
+            "station": "Station",
+            "contentType": "Content Type",
+            "value": "Value",
+            "writeDate": "Write Date"
+        }
+    }
+}

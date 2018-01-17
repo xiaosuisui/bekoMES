@@ -1,0 +1,35 @@
+{
+    "bekoproApp": {
+        "ProductType":{
+            "PDF":"PDF",
+            "Excel":"Excel",
+            "Word":"Word",
+            "Video":"Video",
+            "Picture":"resim"
+        },
+        "productResourceFile" : {
+            "FILE":"Dosya Seç",
+            "DELETEPIC":"silmek",
+            "home": {
+                "title": "Ürün kaynak dosyası",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "createOrEditLabel": "Ürün Kaynak Dosyası Oluşturma veya Düzenleme"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Ürün Kaynak Dosyası oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Ürün kaynak dosyası güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Ürün kaynak dosyası sil",
+            "delete": {
+                "question": "Ürün Kaynak Dosyasını {{ id }} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Ürün kaynak dosyası"
+            },
+            "productNo": "ürün No",
+            "workstationId": "İstasyon Kimliği",
+            "type": "tip",
+            "storageLocation": "Depolama yeri"
+        }
+    }
+}

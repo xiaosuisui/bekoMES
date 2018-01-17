@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "unitdicItems" : {
+            "home": {
+                "title": "sözlük maddeleri",
+                "createLabel": "Yeni bir sözlük maddeleri oluşturun",
+                "createOrEditLabel": "sözlük maddeleri oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir sözlük maddeleri oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir sözlük maddeleri güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir sözlük maddeleri sil",
+            "delete": {
+                "question": "sözlük maddeleri {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "sözlük maddeleri"
+            },
+            "name": "adı",
+            "type": "açıklama",
+            "unitdicGroup": "sözlük grupları"
+        }
+    }
+}

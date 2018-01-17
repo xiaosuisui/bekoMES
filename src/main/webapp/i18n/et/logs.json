@@ -1,0 +1,11 @@
+{
+    "logs": {
+        "title": "Kayıtlar",
+        "nbloggers": "Var {{ total }} dergi.",
+        "filter": "filtre",
+        "table": {
+            "name": "isim",
+            "level": "seviye"
+        }
+    }
+}

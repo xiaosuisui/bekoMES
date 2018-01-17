@@ -1,0 +1,27 @@
+{
+    "bekoproApp": {
+        "tscOrderCreateTemplate" : {
+            "home": {
+                "title": "Tsc sipariş Şablonlar Yarat",
+                "createLabel": "Yeni bir Tcs sipariş Şablonlar Yarat oluşturun",
+                "createOrEditLabel": "Tcs sipariş Şablonlar Yarat oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Tsc sipariş Şablonlar Yarat oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Tsc sipariş Şablonlar Yarat güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Tsc sipariş Şablonlar Yarat sil",
+            "delete": {
+                "question": "Tsc sipariş Şablonlar Yarat {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Tsc sipariş Şablonlar Yarat"
+            },
+            "materialName": "Malzeme Adı",
+            "station": "İstasyonlar",
+            "verticalType": "Dikey Tip",
+            "functionName": "İşlev Adı",
+            "startPoint": "Başlangıç noktası",
+            "endPoint": "Bitiş Noktası",
+            "name": "Adı"
+        }
+    }
+}

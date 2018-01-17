@@ -1,0 +1,22 @@
+{
+    "bekoproApp": {
+        "menu" : {
+            "home": {
+                "title": "Menüler",
+                "createLabel": "Yeni bir Menüler oluşturun",
+                "createOrEditLabel": "Menüler oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Menüler oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Menüler güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Menüler sil",
+            "delete": {
+                "question": "Menüler {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Menüler"
+            },
+            "name": "adı",
+            "url": "Url"
+        }
+    }
+}

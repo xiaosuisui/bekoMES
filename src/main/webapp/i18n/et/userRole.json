@@ -1,0 +1,14 @@
+{
+    "bekoproApp":{
+        "userrole":{
+            "USERINFORMATION":"Kullanıcı adı:",
+            "home":{
+                "createLabel":"yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek"
+            }
+
+        }
+}
+
+}

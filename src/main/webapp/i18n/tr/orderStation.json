@@ -1,0 +1,25 @@
+{
+    "bekoproApp": {
+        "orderStation" : {
+            "home": {
+                "title": "Order Stations",
+                "createLabel": "Create a new Order Station",
+                "createOrEditLabel": "Create or edit a Order Station"
+            },
+            "created": "A new Order Station is created with identifier {{ param }}",
+            "updated": "A Order Station is updated with identifier {{ param }}",
+            "deleted": "A Order Station is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Order Station {{ id }}?"
+            },
+            "detail": {
+                "title": "Order Station"
+            },
+            "order": "Order",
+            "workstation": "Workstation",
+            "operation": "Operation",
+            "stationDatasets": "Station Datasets",
+            "stationStatisticalQuantity": "Station Statistical Quantity"
+        }
+    }
+}

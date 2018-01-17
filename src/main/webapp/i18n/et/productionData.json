@@ -1,0 +1,28 @@
+{
+    "bekoproApp": {
+        "productionData" : {
+            "home": {
+                "title": "Üretim Verileri",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "createOrEditLabel": "Üretim Verileri oluşturma veya düzenleme"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Üretim Verileri oluştur",
+            "updated": "Tanımlayıcı {{ param }} olan bir Üretim Verileri güncelleme",
+            "deleted": "Tanımlayıcı {{ param }} olan bir Üretim Verisini sil",
+            "delete": {
+                "question": "Üretim Verileri {{ id }} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Üretim Verileri"
+            },
+            "qrcode": "QR kod",
+            "operator": "Şebeke",
+            "station": "İstasyonlar",
+            "contentType": "İçerik Türü",
+            "value": "değer",
+            "writeDate": "Tarih Yazın"
+        }
+    }
+}

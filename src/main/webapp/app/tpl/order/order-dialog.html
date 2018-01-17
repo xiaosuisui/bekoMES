@@ -1,0 +1,126 @@
+<link rel="stylesheet" type="text/css" href="app/tpl/order/order_dialog.css">
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myOrderLabel" data-translate="bekoproApp.order.home.createOrEditLabel">Create or edit a Order</h4>
+    </div>
+    <div class="modal-body">
+        <!--orderNo-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.order.orderNo" for="field_orderNo">Order No</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="orderNo" id="field_orderNo"
+                           ng-model="vm.order.orderNo"
+                           required/>
+                </div>
+                <div class="col-sm-4 showMessage">
+                    <div class="warn" ng-show="editForm.orderNo.$invalid">
+                        <small ng-show="editForm.orderNo.$error.required && editForm.orderNo.$pristine && editForm.submitted">
+                            orderNo is required
+                        </small>
+                        <small ng-show="editForm.orderNo.$error.required && editForm.orderNo.$dirty">
+                            orderNo is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--productNo-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.order.home.productNo" for="field_productNo">product No</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="productNo" id="field_productNo"
+                           ng-model="vm.order.productNo"
+                           required/>
+                </div>
+                <div class="col-sm-4 showMessage">
+                    <div class="warn" ng-show="editForm.productNo.$invalid">
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$pristine && editForm.submitted">
+                            productNo is required
+                        </small>
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$dirty">
+                            productNo is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--quantity-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.order.home.quantity" for="field_quantity">quantity</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" name="quantity" id="field_quantity"
+                           ng-model="vm.order.quantity"
+                           required/>
+                </div>
+                <div class="col-sm-4 showMessage">
+                    <div class="warn" ng-show="editForm.quantity.$invalid">
+                        <small ng-show="editForm.quantity.$error.required && editForm.quantity.$pristine && editForm.submitted">
+                            quantity is required
+                        </small>
+                        <small ng-show="editForm.quantity.$error.required && editForm.quantity.$dirty">
+                            quantity is required
+                        </small>
+                        <small ng-show="editForm.quantity.$error.number && editForm.quantity.$dirty">
+                            quantity must be a number
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--operationDateTime-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label"  data-translate="bekoproApp.order.home.operationDateTime" for="field_operationDateTime">operationDateTime</label>
+                <div class="col-sm-6">
+                    <input id="field_operationDateTime"  class="form-control form_datetime" name="operationDateTime1" ng-model="vm.order.operationDateTime1" required/>
+                </div>
+            </div>
+                <div class="col-sm-4 showMessage">
+                    <div class="warn" ng-show="editForm.operationDateTime.$invalid">
+                        <small ng-show="editForm.operationDateTime.$error.required && editForm.operationDateTime.$pristine && editForm.submitted">
+                            operationDateTime is required
+                        </small>
+                        <small ng-show="editForm.operationDateTime.$dirty && editForm.operationDateTime.$invalid">
+                            invalid like:"2017-01-01 12:22:01"
+                        </small>
+                    </div>
+                </div>
+        </fieldset>
+        <!--status-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.order.home.status" for="field_status">status</label>
+                <div class="col-sm-6">
+                    <select class="form-control" name="status" id="field_status"
+                            ng-model="vm.order.status">
+                        <option value="0" data-translate="bekoproApp.OrderState.A">新建</option>
+                        <option value="1" data-translate="bekoproApp.OrderState.B">进行中</option>
+                        <option value="2" data-translate="bekoproApp.OrderState.C">已完成有返修</option>
+                        <option value="3" data-translate="bekoproApp.OrderState.D">完成</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit"  class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+    </div>
+</form>
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: 'yyyy-mm-dd hh:mm:ss',
+        todayBtn : true,
+    }).on('changeDate', function (ev) {
+        $(this).datetimepicker('hide');
+    });
+</script>

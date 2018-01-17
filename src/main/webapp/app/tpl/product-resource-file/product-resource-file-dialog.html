@@ -1,0 +1,214 @@
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myProductResourceFileLabel" data-translate="bekoproApp.productResourceFile.home.createOrEditLabel">Create or
+            edit a ProductResourceFile</h4>
+    </div>
+    <div class="modal-body">
+        <fieldset style="margin-top: 15px">
+                <label class="col-sm-2 control-label" style="text-align: right"
+                       data-translate="bekoproApp.productResourceFile.productNo" for="field_productNo">Product No</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="productNo" id="field_productNo"
+                           ng-model="vm.productResourceFile.productNo"
+                           required/>
+                           <!--ng-model="vm.productResourceFile.productNo" ensure-unique="productResourceFileProductNo"-->
+                </div>
+                <div class="col-md-4 showMessage">
+                    <div class="warn" ng-show="editForm.productNo.$invalid">
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$pristine && editForm.submitted">
+                            productNo is required
+                        </small>
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$dirty">
+                            productNo is required
+                        </small>
+                        <!--<small ng-show="editForm.productNo.$error.unique && editForm.productNo.$dirty">
+                            unique is need
+                        </small>-->
+                    </div>
+                </div>
+        </fieldset>
+        <!--todo 删除===================================================-->
+        <!--<fieldset style="margin-top: 15px">-->
+            <!--<div class="form-group">-->
+                <!--<label class="col-sm-2 control-label" style="text-align: right"-->
+                       <!--data-translate="bekoproApp.productResourceFile.workstationId" for="field_workstationId">Workstation Id</label>-->
+                <!--<div class="col-sm-6">-->
+                    <!--<input type="text" class="form-control" name="workstationId" id="field_workstationId"-->
+                           <!--ng-model="vm.productResourceFile.workstationId"/>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</fieldset>-->
+
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.productResourceFile.workstationId"
+                       for="field_workstationId">Workstation Id</label>
+                <div class="col-sm-6">
+                    <select class="form-control"
+                            name="workstationId" id="field_workstationId"
+                            ng-model="vm.productResourceFile.workstationId"
+                            ng-options="workstation.id as workstation.stationName for workstation in workstations"
+                            ng-selected="vm.productResourceFile.workstationId"
+                            required>
+                        <!--<option value="">&#45;&#45;please select station&#45;&#45;</option>-->
+                    </select>
+                </div>
+                <div class="col-md-4 showMessage">
+                    <div class="warn" ng-show="editForm.workstationId.$invalid">
+                        <small ng-show="editForm.workstationId.$error.required && editForm.workstationId.$pristine && editForm.submitted">
+                            station is required
+                        </small>
+                        <small ng-show="editForm.workstationId.$error.required && editForm.workstationId.$dirty">
+                            station is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.productResourceFile.type"
+                       for="field_type">type</label>
+                <div class="col-sm-6">
+                    <select class="form-control" name="type" id="field_type"
+                            ng-model="vm.productResourceFile.type"
+                            ng-selected="vm.productResourceFile.type"
+                            required>
+                        <!--<option value="">&#45;&#45;please select type&#45;&#45;</option>-->
+                        <option value="PDF" data-translate="bekoproApp.ProductType.PDF">PDF</option>
+                        <option value="Excel" data-translate="bekoproApp.ProductType.Excel">Excel</option>
+                        <option value="Word" data-translate="bekoproApp.ProductType.Word">Word</option>
+                        <option value="Video" data-translate="bekoproApp.ProductType.Video">Video</option>
+                        <option value="Picture" data-translate="bekoproApp.ProductType.Picture">Picture</option>
+                    </select>
+                </div>
+                <div class="col-md-4 showMessage">
+                    <div class="warn" ng-show="editForm.type.$invalid">
+                        <small ng-show="editForm.type.$error.required && editForm.type.$pristine && editForm.submitted">
+                            type is required
+                        </small>
+                        <small ng-show="editForm.type.$error.required && editForm.type.$dirty">
+                            type is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <!--文件上传-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <!--文件上传的按钮-->
+                <div class="col-sm-2 control-label">
+                    <a href="javascript:;" class="file">
+                        <span translate="bekoproApp.productResourceFile.FILE">select file</span>
+                        <input id="field_file" type="file" ngf-select ng-model="file" name="file" ngf-max-size="20MB"
+                               onchange="angular.element(this).scope().img_upload(this.files)">
+                    </a>
+                </div>
+                <div class="col-md-4 showMessage">
+                    <div class="warn">
+                        <small ng-show="editForm.submitted">
+                            file is required
+                        </small>
+                    </div>
+                </div>
+                <!--图片预览显示区-->
+                <div class="col-md-8">
+                    <!--图片上传后的显示地方-->
+                    <div style="height:100px; width:100px; float:left" ng-show="thumb.fileSrc && vm.productResourceFile.type=='Picture'">
+                        <!-- 采用angular循环的方式，对存入thumb的图片进行展示 -->
+                        <label>
+                            <img ng-src="{{thumb.fileSrc}}" style="width:100px; height:100px;"/>
+                        </label>
+                    </div>
+                    <!--<p ng-show="vm.productResourceFile.type!='Picture'">{{thumb.name}}</p>-->
+                    <p>{{thumb.name}}</p>
+                    <button type="button" class="btn-default" style="float:left; margin-top:40px; margin-left:15px"
+                            ng-if="thumb.fileSrc" ng-click="vm.img_del($index)" translate="bekoproApp.productResourceFile.DELETEPIC">
+                        delete
+                    </button>
+                    <!--显示回显图片-->
+                    <div ng-model="vm.productResourceFile.storageLocation" ng-show="vm.productResourceFile.storageLocation  && !thumb.fileSrc">
+                        <!--<img ng-src="upload/prfs/{{vm.productResourceFile.productNo}}/{{vm.productResourceFile.workstationId}}/{{vm.productResourceFile.type}}/{{vm.productResourceFile.storageLocation}}" style="width:100px; height:100px"/>-->
+                        <img ng-src="{{realSrc}}" ng-show="realSrc && !thumb.fileSrc" style="width:100px; height:100px"/>
+                        <!--<p ng-show="vm.productResourceFile.type!='Picture'">{{vm.productResourceFile.storageLocation}}</p>-->
+                        <p>{{vm.productResourceFile.storageLocation}}</p>
+                        <button type="button" class="btn-default" style="margin-left: 15px"
+                                ng-click="vm.img_del($index)">delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span
+                data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
+<style>
+    .modal-content {
+        margin: auto;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .file {
+        position: relative;
+        display: inline-block;
+        background: #D0EEFF;
+        border: 1px solid #99D3F5;
+        border-radius: 4px;
+        padding: 4px 12px;
+        overflow: hidden;
+        color: #1E88C7;
+        text-decoration: none;
+        text-indent: 0;
+        line-height: 20px;
+    }
+
+    .file input {
+        position: absolute;
+        font-size: 100px;
+        right: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .file:hover {
+        background: #AADFFD;
+        border-color: #78C3F3;
+        color: #004974;
+        text-decoration: none;
+    }
+
+    .control-label {
+        padding-right: 0px !important;
+        text-align: right;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .showMessage{
+        margin-left: -10px;
+        line-height: 28px;
+    }
+
+    .warn{
+        color: red;
+    }
+
+    .glyphicon{
+        line-height: 0px;
+    }
+</style>

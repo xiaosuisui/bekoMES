@@ -1,0 +1,26 @@
+{
+  "bekoproApp": {
+    "productRepair" : {
+      "home": {
+        "title": "Product Repairs",
+        "createLabel": "Create a new Product Repair",
+        "createOrEditLabel": "Create or edit a Product Repair"
+      },
+      "created": "A new Product Repair is created with identifier {{ param }}",
+      "updated": "A Product Repair is updated with identifier {{ param }}",
+      "deleted": "A Product Repair is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Product Repair {{ id }}?"
+      },
+      "detail": {
+        "title": "Product Repair"
+      },
+      "productNo": "Product No",
+      "repairReason": "Repair Reason",
+      "state": "State",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "bottomPlaceCode":"Bottom Place Code"
+    }
+  }
+}

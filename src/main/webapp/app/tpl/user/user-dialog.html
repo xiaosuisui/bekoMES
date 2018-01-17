@@ -1,0 +1,207 @@
+<form name="editForm" role="form" ng-submit="vm.save()" novalidate>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="vm.clear()">
+            &times;
+        </button>
+        <h4 class="modal-title" id="myUserLabel" data-translate="user.home.createOrEditLabel">
+            Create or edit a User
+        </h4>
+    </div>
+    <div class="modal-body">
+        <div ng-show="false">
+            <input type="text" id="id" name="id" ng-model="vm.user.id" readonly>
+        </div>
+        <!--重构登录用户名-->
+        <fieldset>
+            <label class="col-md-2 control-label" data-translate="bekoproApp.user.login" for="field_login">Login</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="login" id="field_login" ng-model="vm.user.login"
+                ng-minlength="5" ensure-unique="login" ng-maxlength="20" required />
+            </div>
+            <div class="col-md-4 showMessage">
+                <div class="warn" ng-show="editForm.login.$invalid">
+                    <small ng-show="editForm.login.$error.required && editForm.login.$pristine && editForm.submitted">
+                        Login is required
+                    </small>
+                    <small ng-show="editForm.login.$error.required && editForm.login.$dirty">
+                        Login is required
+                    </small>
+                    <small ng-show="editForm.login.$error.maxlength && editForm.login.$dirty">
+                        maxLength less than 20
+                    </small>
+                    <small ng-show="editForm.login.$error.unique && editForm.login.$dirty">
+                        unique is need
+                    </small>
+                    <small ng-show="editForm.login.$error.minlength && editForm.login.$dirty">
+                        minLength is 5 character
+                    </small>
+                </div>
+            </div>
+        </fieldset>
+
+        <!--firstName-->
+        <fieldset style="margin-top: 15px">
+            <label class="col-md-2 control-label" data-translate="bekoproApp.user.firstName" for="field_firstName">firstName</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="firstName" id="field_firstName" ng-model="vm.user.firstName" required />
+            </div>
+            <div class="col-md-4 showMessage">
+                <div class="warn" ng-show="editForm.firstName.$invalid">
+                    <small ng-show="editForm.firstName.$error.required && editForm.firstName.$pristine && editForm.submitted">
+                        firstName is required
+                    </small>
+                    <small ng-show="editForm.firstName.$error.required && editForm.firstName.$dirty">
+                        firstName is required
+                    </small>
+                </div>
+            </div>
+        </fieldset>
+
+        <!--lastName-->
+        <fieldset style="margin-top: 15px">
+            <label class="col-md-2 control-label" data-translate="bekoproApp.user.lastName" for="field_lastName">lastName</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="lastName" id="field_lastName" ng-model="vm.user.lastName" required />
+            </div>
+            <div class="col-md-4 showMessage">
+                <div class="warn" ng-show="editForm.lastName.$invalid">
+                    <small ng-show="editForm.lastName.$error.required && editForm.lastName.$pristine && editForm.submitted">
+                        lastName is required
+                    </small>
+                    <small  ng-show="editForm.lastName.$error.required && editForm.lastName.$dirty">
+                        lastName is required
+                    </small>
+                </div>
+            </div>
+        </fieldset>
+
+        <!--email-->
+        <fieldset style="margin-top: 15px">
+            <label class="col-sm-2 control-label" data-translate="bekoproApp.user.email" for="field_email">email</label>
+            <div class="col-sm-6">
+                <input type="email" class="form-control" name="email" id="field_email" ng-model="vm.user.email" required/>
+            </div>
+            <div class="col-md-4 showMessage">
+                <div class="warn" ng-show="editForm.email.$invalid">
+                    <small ng-show="editForm.email.$error.required && editForm.email.$pristine && editForm.submitted">
+                        Email is required
+                    </small>
+                    <small ng-show="editForm.email.$error.required && editForm.email.$dirty">
+                        Email is required
+                    </small>
+                    <small ng-show="editForm.email.$error.email && editForm.email.$dirty">
+                        invalid email
+                    </small>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <!--角色选择-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" data-translate="role">role</label>
+                <div class="col-sm-6">
+                    <div ng-repeat="(key,item) in items" class="checkbox-inline" style="margin-left:0px; padding-top:6px; padding-left:35px">
+                        <input type="checkbox" value="{{item.id}}" ng-checked="isChecked(item.id)" ng-click="updateSelection($event,item.id)">
+                        {{item.name}}
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <!--图片上传-->
+        <fieldset style="margin-top: 20px">
+            <div class="form-group">
+                <!--图片上传的按钮-->
+                <div class="col-sm-2 control-label">
+                    <a href="javascript:void(0)" class="file">
+                        <span translate="bekoproApp.user.PICPATH">select picture</span>
+                        <input type="file" ngf-select ng-model="file" name="file" ngf-max-size="20MB" onchange="angular.element(this).scope().img_upload(this.files)">
+                    </a>
+                </div>
+                <!--图片预览显示区-->
+                <div class="col-md-8">
+                    <!--图片上传后的显示地方-->
+                    <div style="height:100px; width:100px; float:left" ng-show="thumb.imgSrc">
+                        <!-- 采用angular循环的方式，对存入thumb的图片进行展示 -->
+                        <label>
+                            <img ng-src="{{thumb.imgSrc}}" style="width:100px; height:100px;" />
+                        </label>
+                    </div>
+                    <button type="button" class="btn-default" style="float:left; margin-top:40px; margin-left:15px" ng-if="thumb.imgSrc" ng-click="vm.img_del($index)" translate="bekoproApp.user.DELETEPIC">
+                        delete
+                    </button>
+                    <!--显示回显图片-->
+                    <div ng-model="vm.user.imageUrl" ng-show="vm.user.imageUrl && !thumb.imgSrc">
+                        <img ng-src="upload/{{vm.user.imageUrl}}" style="width:100px; height:100px" />
+                        <button type="button" class="btn-default" style="margin-left: 15px" ng-click="vm.img_del($index)">delete</button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>
+            &nbsp;
+            <span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>
+            &nbsp;
+            <span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
+
+<style>
+    .modal-content{
+        margin: auto;
+        width: 90%;
+        margin-top: 5%;
+    }
+    .file {
+        position: relative;
+        display: inline-block;
+        background: #D0EEFF;
+        border: 1px solid #99D3F5;
+        border-radius: 4px;
+        padding: 4px 12px;
+        overflow: hidden;
+        color: #1E88C7;
+        text-decoration: none;
+        text-indent: 0;
+        line-height: 20px;
+    }
+    .file input {
+        position: absolute;
+        font-size: 100px;
+        right: 0;
+        top: 0;
+        opacity: 0;
+    }
+    .file:hover {
+        background: #AADFFD;
+        border-color: #78C3F3;
+        color: #004974;
+        text-decoration: none;
+    }
+    .control-label{
+        padding-right: 0px !important;
+        text-align: right;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .showMessage{
+        margin-left: -10px;
+        line-height: 28px;
+    }
+    .warn{
+        color: red;
+    }
+    .glyphicon{
+        line-height: 0px;
+    }
+</style>

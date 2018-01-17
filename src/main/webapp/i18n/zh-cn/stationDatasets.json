@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "stationDatasets" : {
+            "home": {
+                "title": "Station Datasets",
+                "createLabel": "Create a new Station Datasets",
+                "createOrEditLabel": "Create or edit a Station Datasets"
+            },
+            "created": "A new Station Datasets is created with identifier {{ param }}",
+            "updated": "A Station Datasets is updated with identifier {{ param }}",
+            "deleted": "A Station Datasets is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Station Datasets {{ id }}?"
+            },
+            "detail": {
+                "title": "Station Datasets"
+            },
+            "stationKey": "Station Key",
+            "stationValue": "Station Value",
+            "orderStation": "Order Station"
+        }
+    }
+}

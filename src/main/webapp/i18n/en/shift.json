@@ -1,0 +1,35 @@
+{
+    "bekoproApp": {
+        "shiftDetail":{
+            "name":"name",
+            "contentType":"contentType",
+            "startTime":"startTime",
+            "endTime":"endTime",
+            "description":"description"
+        },
+        "shift" : {
+            "name":"name",
+            "description":"description",
+            "active":"active",
+            "home": {
+                "editLabel":"Edit",
+                "deleteLabel":"Delete",
+                "title": "Pallets",
+                "createLabel": "Add",
+                "createOrEditLabel": "Create or edit a Pallet"
+            },
+            "created": "A new Pallet is created with identifier {{ param }}",
+            "updated": "A Pallet is updated with identifier {{ param }}",
+            "deleted": "A Pallet is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Shift {{ id }}?"
+            },
+            "detail": {
+                "title": "Pallet"
+            },
+            "palletName": "Pallet Name",
+            "palletNo": "Pallet No",
+            "state": "State"
+        }
+    }
+}

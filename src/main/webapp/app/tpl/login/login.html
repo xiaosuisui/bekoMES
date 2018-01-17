@@ -1,0 +1,82 @@
+<style  type="text/css">
+    body{
+        background-image: url("app/image/bg.png");
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
+    .welcome{
+        font-size: 26px;
+        font-family:"方正兰亭黑简体","微软雅黑";
+        color: #2d92cd;
+        margin-left: -10px;
+    }
+    .form-control {
+        background-color: #dfe1eb !important;
+        height: 40px !important;
+    }
+    .logo{
+        color: white;
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 5px;
+        font-family:  "微软雅黑","黑体";
+    }
+</style>
+<!--重构登录页面-->
+<!--顶部公司标题栏-->
+<div class="logo pull-left">Copyright 2017上海明匠智能科技研发有限公司</div>
+<div class="row" style="overflow:hidden; margin-top: 3%;" resize>
+    <div class="col-md-offset-3 col-lg-offset-3  col-sm-offset-2 col-md-6
+		    	col-xs-12 col-sm-10 col-lg-6" align="center" style="position: relative;" id="div">
+        <!--最外层的登录的盒子-->
+        <img src="app/image/loginbox.png" id="image" class="img-responsive" style="max-height: 550px;min-height: 500px;" imageonload="doThis()">
+
+        <div style="position: absolute;z-index:2;top:80px;" id="content">
+            <!--login 图标-->
+            <div class="row">
+                <div class="col-md-offset-2 col-md-7 col-lg-offset-2 col-lg-8">
+                    <img src="app/image/arcelik.png" style="width: 200px;height: 60px;">
+                </div>
+            </div>
+            <!--Welcome-->
+            <div class="row" style="margin-top: 32px">
+                <div class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <!--<span class="welcome" ng-hide="vm.authenticationError">Welcome</span>-->
+                    <span class="welcome">Welcome</span>
+                </div>
+            </div>
+            <!--form表单-->
+            <div class="row form" style="margin-top: 18px">
+                <form class="form-horizontal" role="role" id="login" ng-submit="vm.login($event)">
+                    <div class="col-md-offset-2 col-lg-offset-2 col-xs-offset-1 col-sm-offset-1 col-md-8 col-xs-10 col-sm-10 col-lg-8">
+                        <!--userName-->
+                        <div class="form-group">
+                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                            <input type="text" autocomplete="off"  class="form-control" id="username" placeholder="{{'login.form.username.placeholder' | translate}}" ng-model="vm.username">
+                        </div>
+                    </div>
+                    <div class="col-md-offset-2 col-lg-offset-2 col-xs-offset-1 col-sm-offset-1 col-md-8 col-xs-10 col-sm-10 col-lg-8">
+                        <!--password-->
+                        <div class="form-group">
+                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                            <input type="password" class="form-control" id="password" placeholder="{{'login.form.password.placeholder' | translate}}"
+                                   ng-model="vm.password">
+                        </div>
+                    </div>
+                    <div class="col-md-offset-2 col-lg-offset-2 col-xs-offset-1 col-sm-offset-1 col-md-8 col-xs-10 col-sm-10 col-lg-8">
+                        <!--password-->
+                        <div class="form-group " align="left">
+                            <input type="checkbox"   id="rememberMe" ng-model="vm.rememberMe" checked>
+                            <span data-translate="login.form.rememberme" class="text">Remember me</span>
+                        </div>
+                    </div>
+                    <!--登录按钮-->
+                    <div class="col-md-offset-2 col-lg-offset-2 col-xs-offset-1 col-sm-offset-1 col-md-8 col-xs-10 col-sm-10 col-lg-8" style="margin-top: 30px;margin-bottom: 10px">
+                        <button type="submit" class="btn btn-info" style="width: 100% ">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

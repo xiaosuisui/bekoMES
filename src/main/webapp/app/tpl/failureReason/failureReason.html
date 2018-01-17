@@ -1,0 +1,47 @@
+<link rel="stylesheet" type="text/css" href="app/tpl/failureReason/failureReason.css">
+<div class="pallet_container">
+    <div class="container-fluid">
+        <h3 class="title_page">failureReason management</h3>
+        <div class="row rowConfig">
+            <div class="col-xs-7 col-sm-7 col_config" >
+                <button class="btn btn-new btn-primary" ui-sref="app.main.failureReason.new">
+                    <span  data-translate="bekoproApp.failureReason.home.createLabel">
+                        Create
+                    </span>
+                </button>
+                <button class="btn btn-new btn-primary" style="margin-left: 5px" ng-disabled="vm.countRow" ui-sref="app.main.failureReason.edit({id:testRow.id})" >
+                    <span  data-translate="bekoproApp.failureReason.home.editLabel">
+                        Edit
+                    </span>
+                </button>
+                <button class="btn btn-new btn-primary delete" style="margin-left: 5px"  ng-disabled="vm.countRow" ui-sref="app.main.failureReason.delete({id:testRow.id})" >
+                    <span  data-translate="bekoproApp.failureReason.home.deleteLabel">
+                        Delete
+                    </span>
+                </button>
+            </div>
+            <!---->
+            <div class="col-xs-4 col-sm-4">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4" style="padding-right: 0px">
+                        <select ng-model="vm.searchSelectOption" style="border-right:0px solid;width: 100%" class="form-control search_config">
+                            <option value="">请选择</option>
+                            <option ng-repeat="option in searchOptions" value="{{option.value}}">{{option.name}}</option>
+
+                        </select>
+                    </div>
+                    <div class="col-xs-6 col-sm-6" style="padding-left: 0px">
+                        <input type="text" class="form-control search_config" size="25" placeholder="palletNo" ng-model="vm.failureReasonValue">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 col-xs-1 button_config">
+                <button type="button" class="btn btn-new btn-primary" ng-click="vm.search()">search</button>
+            </div>
+        </div>
+    </div>
+    <!--查询表格-->
+    <div data-ng-init="init()" id="uigridDiv" ui-grid="gridOptions"class="table-uigrid table_config"  ui-grid-edit ui-grid-pagination
+         ui-grid-selection ui-grid-exporter ui-grid-resize-columns ui-grid-auto-resize >
+    </div>
+</div>

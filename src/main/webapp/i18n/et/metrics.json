@@ -1,0 +1,101 @@
+{
+    "metrics": {
+        "title": "Uygulama Ölçütleri",
+        "refresh.button": "Yenile",
+        "updating": "Güncelleniyor...",
+        "jvm": {
+            "title": "JVM Metrik",
+            "memory": {
+                "title": "Bellek",
+                "total": "Toplam hafıza",
+                "heap": "Yığın Bellek",
+                "nonheap": "Yığın olmayan bellek"
+            },
+            "threads": {
+                "title": "iplik",
+                "all": "Herşey",
+                "runnable": "Runnable",
+                "timedwaiting": "Zamanlamalı bekleniyor",
+                "waiting": "bekleme",
+                "blocked": "tıkalı",
+                "dump": {
+                    "title": "iplik çöplük",
+                    "id": "Id: ",
+                    "blockedtime": "Engellenen Zaman",
+                    "blockedcount": "Engellenen Sayım",
+                    "waitedtime": "Beklenen süre",
+                    "waitedcount": "Beklenen sayım",
+                    "lockname": "Kilitle adı",
+                    "stacktrace": "Yığın izleme",
+                    "show": "Yığın İzini Göster",
+                    "hide": "Yığın İzlemeyi Gizle"
+                }
+            },
+            "gc": {
+                "title": "Çöp koleksiyonları",
+                "marksweepcount": "Mark Sweep sayısı",
+                "marksweeptime": "Mark Sweep zamanı",
+                "scavengecount": "Süpürme sayısı",
+                "scavengetime": "Temizleme zamanı"
+            },
+            "http": {
+                "title": "HTTP istekleri (saniye başına etkinlikler)",
+                "active": "Aktif istekler:",
+                "total": "Toplam istek:",
+                "table": {
+                    "code": "kod",
+                    "count": "saymak",
+                    "mean": "Anlamına gelmek",
+                    "average": "Ortalama"
+                },
+                "code": {
+                    "ok": "Ok",
+                    "notfound": "Bulunamadı",
+                    "servererror": "Server hatası"
+                }
+            }
+        },
+        "servicesstats": {
+            "title": "Hizmetler istatistikleri (milisaniye cinsinden süre)",
+            "table": {
+                "name": "Hizmet adı",
+                "count": "saymak",
+                "mean": "Anlamına gelmek",
+                "min": "Min",
+                "max": "Max",
+                "p50": "p50",
+                "p75": "p75",
+                "p95": "p95",
+                "p99": "p99"
+            }
+        },
+        "cache": {
+            "title": "Önbellek istatistikleri",
+            "cachename": "Önbellek adı",
+            "hits": "Önbellek Hitler",
+            "misses": "Önbellek Hataları",
+            "gets": "Önbellek Gets",
+            "puts": "Önbellek koyar",
+            "removals": "Önbellekten Çıkarma İşlemleri",
+            "evictions": "Önbellekten Çıkarma İşlemleri",
+            "hitPercent": "Önbellek Tetikleme%",
+            "missPercent": "Önbellek Miss%",
+            "averageGetTime": "Ortalama alma süresi (μs)",
+            "averagePutTime": "Ortalama alma süresi (μs)",
+            "averageRemoveTime": "Kaldırma süresinin ortalaması (μs)"
+        },
+        "datasource": {
+            "usage": "kullanım",
+            "title": "Veri Kaynağı istatistikleri (milisaniye cinsinden süre)",
+            "name": "Havuz kullanımı",
+            "count": "saymak",
+            "mean": "Anlamına gelmek",
+            "min": "Min",
+            "max": "Max",
+            "p50": "p50",
+            "p75": "p75",
+            "p95": "p95",
+            "p99": "p99"
+        }
+    }
+}

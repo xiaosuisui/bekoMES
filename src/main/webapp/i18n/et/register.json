@@ -1,0 +1,24 @@
+{
+    "register": {
+        "title": "kayıt",
+        "form": {
+            "button": "Kayıt"
+        },
+        "messages": {
+            "validate": {
+                "login": {
+                    "required": "Kullanıcı adınız gerekiyor.",
+                    "minlength": "Kullanıcı adınızın en az 1 karakter olması gerekiyor.",
+                    "maxlength": "Kullanıcı adınız 50 karakterden uzun olamaz.",
+                    "pattern": "Kullanıcı adınız yalnızca küçük harf ve rakam içerebilir."
+                }
+            },
+            "success": "<strong>Kayıt kaydedildi!</strong> Lütfen onay için e-postanızı kontrol edin.",
+            "error": {
+                "fail": "<strong>Kayıt başarısız!</strong> Lütfen daha sonra tekrar deneyiniz.",
+                "userexists": "<strong>Giriş adı zaten kayıtlı!</strong> Lütfen başka birini seçin.",
+                "emailexists": "<strong>E-posta zaten kullanımda!</strong> Lütfen başka birini seçin."
+            }
+        }
+    }
+}

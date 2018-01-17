@@ -1,0 +1,84 @@
+{
+    "aside": {
+        "title": "giriş yap",
+        "nav": {
+            "Order":"Sipariş Yönetimi",
+            "ORDERMANAGEMENT": "Sipariş Yönetimi",
+            "ORDERPLAN":"Sipariş planı",
+            "ORDERPRODUCTION":"Üretim Siparişi",
+            "WORKORDER":"Work Order",
+            "PALLET":"Palet Yönetimi",
+            "PRODUCT":"Ürün",
+            "WORKCENTER":"İş merkezi",
+            "WORKSTATION":"İstasyonlar",
+            "HEADER": "Navigasyon",
+            "button": "giriş yap",
+            "PRODUCTCODE":"Ürün Kodu",
+            "PRODUCTREPAIR":"Ürün onarımı",
+            "PRODUCTRESOURCEFILE":"Ürün kaynak dosyası",
+            "basic":{
+                "USERINFORMATION":"Kullanıcı bilgisi",
+                "ROLEINFORMATION":"Rol Bilgileri",
+                "DATADICT":"veri kararı"
+            },
+            "components":{
+                "TECHNOLOGY":"Teknoloji Yapılandırması",
+                "COMPONENTS":"Bileşenler",
+                "OPERATION":"süreç",
+                "PRODUCTIONDATA":"üretim verileri",
+                "DATATRACK":"veri izi",
+                "OPERATORDATA":"Operatör verileri",
+                "TCSORDER":"TCS Sipariş",
+                "ui_kits":{
+                    "UI_KITS" : "UI malzeme",
+                    "BUTTONS" : "düğme",
+                    "ICONS" : "Icons",
+                    "GRID" : "ızgara",
+                    "BOOTSTRAP" : "çizme atkısı",
+                    "SORTABLE" : "sıralanabilir",
+                    "PORTLET" : "Portlet'i",
+                    "TIMELINE" : "Zaman çizelgesi",
+                    "VECTOR_MAP" : "Vektör Haritası"
+                },
+                "table" : {
+                    "TABLE" : "tablo",
+                    "TABLE_STATIC" : "Tablo statik",
+                    "DATATABLE" : "Veri tablosu",
+                    "FOOTABLE" : "Footable"
+                },
+                "form" : {
+                    "FORM" : "formlar",
+                    "FORM_ELEMENTS" : "Form öğesi",
+                    "FORM_VALIDATION" : "Form doğrulama",
+                    "FORM_WIZARD" : "Form sihirbazı"
+                },
+                "CHART" : "Grafik",
+                "pages" : {
+                    "PAGES" : "Sayfalar",
+                    "PROFILE" : "brifing",
+                    "POST" : "Post",
+                    "SEARCH" : "Arama",
+                    "INVOICE" : "Invoice",
+                    "LOCK_SCREEN" : "Kilit ekranı",
+                    "SIGNIN" : "giriş yap",
+                    "SIGNUP" : "Kaydol",
+                    "FORGOT_PASSWORD" : "Parolanızı mı unuttunuz",
+                    "404" : "404"
+                }
+            },
+            "your_stuff" : {
+                "YOUR_STUFF": "Senin eşyaların",
+                "PROFILE" : "brifing",
+                "DOCUMENTS" : "evraklar"
+            }
+        }
+    },
+    "header":{
+        "navbar":{
+            "new":{
+                "NEW":"yeni"
+            }
+        }
+    }
+}
+

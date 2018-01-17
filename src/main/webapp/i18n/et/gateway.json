@@ -1,0 +1,15 @@
+{
+    "gateway": {
+        "title": "geçit",
+        "routes": {
+            "title": "Mevcut rotalar",
+            "url": "URL",
+            "service": "hizmet",
+            "servers": "Kullanılabilir sunucular",
+            "error": "Uyarı: Sunucu yok!"
+        },
+        "refresh": {
+            "button": "Yenile"
+        }
+    }
+}

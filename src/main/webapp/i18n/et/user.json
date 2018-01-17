@@ -1,0 +1,60 @@
+{
+    "user":{
+        "delete":{
+            "question":"Kullanıcıyı {{ login}} silmek istediğinizden emin misiniz?"
+        },
+        "home":{
+            "title":"Kullanıcılar"
+        }
+    },
+    "Email":"E-posta",
+    "user":{
+      "home":{
+          "createOrEditLabel":"Kullanıcılar oluşturun veya düzenleyin"
+      },
+        "login":"Oturum aç",
+        "firstName":"İsim",
+        "activated":"aktive"
+    },
+
+    "bekoproApp": {
+        "user": {
+            "authority":"yetki",
+            "Login":"Oturum aç",
+            "PICPATH":"Fotoğraf",
+            "DELETEPIC":"silmek",
+            "oldPassword":"eski şifre",
+            "newPassword":"Yeni Şifre",
+            "confirmPassword":"Şifreyi Onayla",
+            "home": {
+                "title": "Kullanıcılar",
+                "createLabel": "yeni",
+                "editLabel": "Düzenleme",
+                "deleteLabel": "silmek",
+                "addRole":"rol",
+                "createOrEditLabel": "Kullanıcılar oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Kullanıcılar oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Kullanıcılar güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Kullanıcılar sil",
+            "delete": {
+                "question": "Kullanıcılar {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Kullanıcılar"
+            },
+            "login": "Oturum aç",
+            "firstName": "İsim",
+            "lastName": "Soyadı",
+            "email": "E-posta",
+            "activated": "aktive",
+            "deactivated": "Devre dışı",
+            "profiles": "Profiller",
+            "langKey": "Dil",
+            "createdBy": "Tarafından yaratıldı",
+            "createdDate": "Oluşturulan tarih",
+            "lastModifiedBy": "Tarafından tasarlandı",
+            "lastModifiedDate": "Değiştirilme tarihi"
+        }
+    }
+}

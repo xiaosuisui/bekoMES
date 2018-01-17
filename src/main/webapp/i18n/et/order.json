@@ -1,0 +1,43 @@
+{
+    "bekoproApp": {
+        "OrderState":{
+            "A":"<span>Başlamadı</span>",
+            "B":"Devam ediyor",
+            "C":"Tamamlandı, onarım var",
+            "D":"tamamlayınız"
+        },
+        "order" : {
+            "home": {
+                "title": "sipariş formu",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "createOrEditLabel": "Sipariş oluşturun veya düzenleyin",
+                "workOrderNo":"İş emri numarası",
+                "productNo":"ürün No",
+                "operationDateTime":"Operasyon zamanı",
+                "quantity":"miktar",
+                "startDate":"başlangıç tarihi",
+                "status":"durum"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir sipariş oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir sipariş güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir sipariş sil",
+            "delete": {
+                "question": "Siparişini {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Sipariş"
+            },
+            "orderNo": "Sipariş No",
+            "productNo": "ürün No",
+            "quantity": "miktar",
+            "endDate": "Bitiş tarihi",
+            "operationDateTime":"Operasyon zamanı",
+            "status": "durum",
+            "onlineNumber": "Çevrimiçi miktar",
+            "repairNumber": "Tamir miktarı",
+            "completionNumber": "Tamamlanma miktarı"
+        }
+    }
+}

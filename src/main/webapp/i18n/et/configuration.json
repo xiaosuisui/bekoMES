@@ -1,0 +1,10 @@
+{
+    "configuration": {
+        "title": "Yapılandırma",
+        "filter": "Filtre (önek ile)",
+        "table": {
+            "prefix": "Önek",
+            "properties": "Özellikleri"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "bekoproApp": {
+        "stationCycleTime" : {
+            "home": {
+                "title": "Station Cycle Times",
+                "createLabel": "Create a new Station Cycle Time",
+                "createOrEditLabel": "Create or edit a Station Cycle Time"
+            },
+            "created": "A new Station Cycle Time is created with identifier {{ param }}",
+            "updated": "A Station Cycle Time is updated with identifier {{ param }}",
+            "deleted": "A Station Cycle Time is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Station Cycle Time {{ id }}?"
+            },
+            "detail": {
+                "title": "Station Cycle Time"
+            },
+            "bottomPlaceCode": "Bottom Place Code",
+            "productNo": "Product No",
+            "bottomPlateStationStart": "Bottom Plate Station Start",
+            "bottomPlateStationEnd": "Bottom Plate Station End",
+            "bottomPlateStationCycleTime": "Bottom Plate Station Cycle Time",
+            "topPlateStationStart": "Top Plate Station Start",
+            "topPlateStationEnd": "Top Plate Station End",
+            "topPlateStationCycleTime": "Top Plate Station Cycle Time"
+        }
+    }
+}

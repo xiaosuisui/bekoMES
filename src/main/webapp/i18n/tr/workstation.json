@@ -1,0 +1,27 @@
+{
+    "bekoproApp": {
+        "workstation" : {
+            "home": {
+                "title": "Workstations",
+                "createLabel": "Create a new Workstation",
+                "createOrEditLabel": "Create or edit a Workstation"
+            },
+            "created": "A new Workstation is created with identifier {{ param }}",
+            "updated": "A Workstation is updated with identifier {{ param }}",
+            "deleted": "A Workstation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Workstation {{ id }}?"
+            },
+            "detail": {
+                "title": "Workstation"
+            },
+            "stationNo": "Station No",
+            "stationName": "Station Name",
+            "desc": "Desc",
+            "allocationPercent": "Allocation Percent",
+            "lastModifiedDate": "Last Modified Date",
+            "stationId": "Station Id",
+            "orderStation": "Order Station"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "health": {
+        "title": "Sağlık Kontrolleri",
+        "refresh.button": "Yenile",
+        "stacktrace": "Yığın izleme",
+        "details": {
+            "details": "ayrıntılar",
+            "properties": "Özellikleri",
+            "name": "adı",
+            "value": "değer",
+            "error": "Hata"
+        },
+        "indicator": {
+            "diskSpace": "Disk alanı",
+            "mail": "E-posta",
+            "db": "Veritabanı"
+        },
+        "table": {
+            "service": "Hizmet adı",
+            "status": "durum"
+        },
+        "status": {
+            "UP": "yukarı",
+            "DOWN": "aşağı"
+        }
+    }
+}

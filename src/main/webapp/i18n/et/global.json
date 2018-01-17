@@ -1,0 +1,148 @@
+{
+    "global": {
+        "title": "Bekopro",
+        "browsehappy": "Kullanıyorsunuz <strong>modası geçmiş</strong> tarayıcı. Lütfen <a href=\"http://browsehappy.com/?locale=en\">tarayıcınızı yükseltin</a> deneyiminizi geliştirmek için.",
+        "menu": {
+            "home": "Home",
+            "jhipster-needle-menu-add-element": "JHipster buraya ek menü girişleri ekleyecek (çevirme!)",
+            "entities": {
+                "main": "Varlıkları",
+                "order": "Sipariş",
+                "schedulejob": "Işleri planla",
+                "pallet": "Paletler",
+                "workstation": "İstasyonlar",
+                "operation": "süreç",
+                "role": "rol",
+                "menu": "Menüler",
+                "product": "Ürünler",
+                "operationDatasets": "süreç Veri Setleri",
+                "consumedParts": "Tüketilen Parçalar",
+                "partsDatasets": "Parça Veri Setleri",
+                "stationDatasets": "İstasyonlar Veri Setleri",
+                "orderStation": "Sipariş istasyon",
+                "unitdicGroup": "sözlük grupları",
+                "unitdicItems": "sözlük maddeleri",
+                "dict": "sözlük",
+                "dictItem": "sözlük madde",
+                "stationStatisticalQuantity": "İstasyon İstatistik Miktarları",
+                "productionData": "Üretim Verileri",
+                "operatorData": "Operatör Verileri",
+                "productCode": "Ürün Kodları",
+                "stationCycleTime": "İstasyonlar Çevrim Zamanları",
+                "tcsOrder": "Tcs sipariş",
+                "tscOrderCreateTemplate": "Tsc sipariş Şablonlar Yarat",
+                "jhipster-needle-menu-add-entry": "JHipster burada ek öğeler ekleyecek (çevirme!)"
+            },
+            "account": {
+                "main": "hesap",
+                "settings": "Ayarlar",
+                "password": "Parola",
+                "sessions": "konuşma",
+                "login": "giriş yap",
+                "logout": "oturumu Kapat",
+                "register": "Kayıt"
+            },
+            "admin": {
+                "main": "yönetim",
+                "userManagement": "Kullanıcı yönetimi",
+                "tracker": "Kullanıcı izci",
+                "metrics": "Metrik",
+                "health": "Sağlık",
+                "configuration": "Yapılandırma",
+                "logs": "Kayıtlar",
+                "audits": "Denetimler",
+                "apidocs": "API",
+                "database": "Veritabanı",
+                "jhipster-needle-menu-add-admin-element": "JHipster buraya ek menü girişleri ekleyecek (çevirme!)"
+            },
+            "language": "Dil"
+        },
+        "form": {
+            "username": "Kullanıcı adı",
+            "username.placeholder": "Kullanıcı adınızı",
+            "newpassword": "Yeni Şifre",
+            "newpassword.placeholder": "Yeni Şifre",
+            "confirmpassword": "Yeni şifre onayı",
+            "confirmpassword.placeholder": "Yeni şifreyi onayla",
+            "email": "E-posta",
+            "email.placeholder": "E-posta adresiniz"
+        },
+        "messages": {
+            "info": {
+                "authenticated": "Eğer istersen <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">giriş yap</a>, varsayılan hesapları deneyebilirsiniz:<br/>- yönetici (oturum aç=\"admin\" and parola=\"admin\") <br/>- kullanıcı (oturum aç=\"user\" and parola=\"user\").",
+                "register": "Hala bir hesabınız yok? <a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">Yeni hesap kaydet</a>"
+            },
+            "error": {
+                "dontmatch": "Şifre ve onayı eşleşmiyor!"
+            },
+            "validate": {
+                "newpassword": {
+                    "required": "Parolanız gerekiyor.",
+                    "minlength": "Parolanız en az 4 karakter olmalıdır.",
+                    "maxlength": "Şifreniz 50 karakterden uzun olamaz.",
+                    "strength": "Şifrenin Gizlilik Gücü:"
+                },
+                "confirmpassword": {
+                    "required": "Onay şifreniz gerekiyor.",
+                    "minlength": "Onay şifrenizin en az 4 karakter olması gerekir.",
+                    "maxlength": "Onay şifreniz 50 karakterden uzun olamaz."
+                },
+                "email": {
+                    "required": "E-postanız gerekli.",
+                    "invalid": "E-posta adresiniz geçersiz.",
+                    "minlength": "E-postanızın en az 5 karakter olması gerekiyor.",
+                    "maxlength": "E-postanız 50 karakterden uzun olamaz."
+                }
+            }
+        },
+        "field": {
+            "id": "ID"
+        },
+        "ribbon": {
+            "dev":"gelişme"
+        }
+    },
+    "entity": {
+        "action": {
+            "addblob": "Blob ekle",
+            "addimage": "Resim eklemek",
+            "back": "Geri",
+            "cancel": "İptal etmek",
+            "delete": "silmek",
+            "edit": "Düzenleme",
+            "open": "Açık",
+            "save": "Kayıt etmek",
+            "view": "Görünüm"
+        },
+        "detail": {
+            "field": "Alan",
+            "value": "değer"
+        },
+        "delete": {
+            "title": "Silme işlemini onayla"
+        },
+        "validation": {
+            "required": "gereklidir.",
+            "minlength": "Bu alanın en az {{min}} karakter olması gerekiyor.",
+            "maxlength": "Bu alan {{max}} karakterden uzun olamaz.",
+            "min": "Bu alan en az {{min}} olmalıdır.",
+            "max": "Bu alan {{max}} dan fazla olamaz.",
+            "minbytes": "Bu alan en az {{min}} bayt olmalıdır.",
+            "maxbytes": "Bu alan {{max}} bayttan fazla olamaz.",
+            "pattern": "Bu alan, {{pattern}} için desen izlemelidir.",
+            "number": "Bu alan bir sayı olmalıdır.",
+            "datetimelocal": "Bu alan bir tarih ve saat olmalıdır."
+        }
+    },
+    "error": {
+        "internalServerError": "İç Sunucu Hatası",
+        "server.not.reachable": "Sunucuya erişilemiyor",
+        "url.not.found": "Bulunamadı",
+        "NotNull": "Alan {{fieldName}} boş olamaz!",
+        "Size": "Alan {{fieldName}}, minimum / maksimum boyut gereksinimlerini karşılamıyor!",
+        "userexists": "Giriş adı zaten kullanıldı!",
+        "emailexists": "E-posta zaten kullanımda!",
+        "idexists": "Yeni bir {{entityName}} zaten bir kimliği olamaz"
+    },
+    "footer": "Bu altbilginiz"
+}

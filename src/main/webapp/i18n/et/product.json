@@ -1,0 +1,36 @@
+{
+    "bekoproApp": {
+        "ProductType":{
+            "A":"Üretilmedi",
+            "B":"Üretim devam ediyor",
+            "C":"tamamlayınız",
+            "D":"Tamamlandı (Onarım)"
+        },
+        "product" : {
+            "PICPATH":"Fotoğraf",
+            "DELETEPIC":"silmek",
+            "home": {
+                "title": "Ürünler",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "createOrEditLabel": "Ürün Oluşturma veya Düzenleme"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir ürün oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Paleti güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir ürünü sil",
+            "delete": {
+                "question": "Ürünü {{ id }} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Ürün"
+            },
+            "productNo": "Ürün No",
+            "productName": "Ürün adı",
+            "type": "tip",
+            "qrcode": "QR kod",
+            "picPath": "Resimli Yol",
+            "unit": "birim"
+        }
+    }
+}

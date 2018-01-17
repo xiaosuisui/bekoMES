@@ -1,0 +1,26 @@
+{
+  "bekoproApp": {
+    "productRepair" : {
+      "home": {
+        "title": "Ürün Onarımları",
+        "createLabel": "Yeni bir Ürün Onarımı oluşturun",
+        "createOrEditLabel": "Ürün Onarımı Oluşturma veya Düzenleme"
+      },
+      "created": "tanımlayıcı {{ param }} olan bir Ürün onarımı oluştur",
+      "updated": "tanımlayıcı {{ param }} olan bir Ürün onarımı güncelleme",
+      "deleted": "tanımlayıcı {{ param }} olan bir Ürün onarımı sil",
+      "delete": {
+        "question": "Ürün Onarımı {{ id }} silmek istediğinizden emin misiniz?"
+      },
+      "detail": {
+        "title": "Ürün Onarımları"
+      },
+      "productNo": "ürün No",
+      "repairReason": "Tamir Nedeni",
+      "state": "durum",
+      "startTime": "Başlama zamanı",
+      "endTime": "Bitiş zamanı",
+      "bottomPlaceCode":"Şasi barkodu"
+    }
+  }
+}

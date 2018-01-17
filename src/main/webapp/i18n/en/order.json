@@ -1,0 +1,43 @@
+{
+    "bekoproApp": {
+        "OrderState":{
+            "A":"<span>not start</span>",
+            "B":"producing",
+            "C":"finishButrepair",
+            "D":"finished"
+        },
+        "order" : {
+            "home": {
+                "title": "Orders",
+                "createLabel": "Add",
+                "editLabel":"Edit",
+                "deleteLabel":"Delete",
+                "createOrEditLabel": "Create or edit a Order",
+                "workOrderNo":"workOrderNo",
+                "productNo":"productNo",
+                "operationDateTime":"OperationTime",
+                "quantity":"quantity",
+                "startDate":"startDate",
+                "status":"status"
+            },
+            "created": "A new Order is created with identifier {{ param }}",
+            "updated": "A Order is updated with identifier {{ param }}",
+            "deleted": "A Order is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Order {{ id }}?"
+            },
+            "detail": {
+                "title": "Order"
+            },
+            "orderNo": "OrderNo",
+            "productNo": "Product No",
+            "quantity": "Quantity",
+            "endDate": "EndDate",
+            "operationDateTime":"OperationTime",
+            "status": "Status",
+            "onlineNumber": "OnlineNumber",
+            "repairNumber": "RepairNumber",
+            "completionNumber": "CompletionNumber"
+        }
+    }
+}

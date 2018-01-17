@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "pallet" : {
+            "home": {
+                "title": "托盘",
+                "createLabel": "创建一个新的托盘",
+                "createOrEditLabel": "创建或编辑托盘"
+            },
+            "created": "托盘{{ param }} 创建成功",
+            "updated": "托盘{{ param }} 更新成功",
+            "deleted": "托盘{{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除该托盘?"
+            },
+            "detail": {
+                "title": "托盘"
+            },
+            "palletName": "托盘名称",
+            "palletNo": "托盘编号",
+            "state": "状态"
+        }
+    }
+}

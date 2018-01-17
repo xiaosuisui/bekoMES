@@ -1,0 +1,24 @@
+{
+    "bekoproApp": {
+        "consumedParts" : {
+            "home": {
+                "title": "Consumed Parts",
+                "createLabel": "Create a new Consumed Parts",
+                "createOrEditLabel": "Create or edit a Consumed Parts"
+            },
+            "created": "A new Consumed Parts is created with identifier {{ param }}",
+            "updated": "A Consumed Parts is updated with identifier {{ param }}",
+            "deleted": "A Consumed Parts is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Consumed Parts {{ id }}?"
+            },
+            "detail": {
+                "title": "Consumed Parts"
+            },
+            "partName": "Part Name",
+            "partDateReleased": "Part Date Released",
+            "operation": "Operation",
+            "partsDatasets": "Parts Datasets"
+        }
+    }
+}

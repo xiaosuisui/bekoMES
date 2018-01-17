@@ -1,0 +1,25 @@
+{
+    "bekoproApp": {
+        "stationStatisticalQuantity" : {
+            "home": {
+                "title": "Station Statistical Quantities",
+                "createLabel": "Create a new Station Statistical Quantity",
+                "createOrEditLabel": "Create or edit a Station Statistical Quantity"
+            },
+            "created": "A new Station Statistical Quantity is created with identifier {{ param }}",
+            "updated": "A Station Statistical Quantity is updated with identifier {{ param }}",
+            "deleted": "A Station Statistical Quantity is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Station Statistical Quantity {{ id }}?"
+            },
+            "detail": {
+                "title": "Station Statistical Quantity"
+            },
+            "orderId": "Order Id",
+            "stationNo": "Station No",
+            "productNo": "Product No",
+            "quantity": "Quantity",
+            "orderStation": "Order Station"
+        }
+    }
+}

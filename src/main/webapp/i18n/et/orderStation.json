@@ -1,0 +1,25 @@
+{
+    "bekoproApp": {
+        "orderStation" : {
+            "home": {
+                "title": "Sipariş istasyon",
+                "createLabel": "Yeni bir sipariş istasyon oluşturun",
+                "createOrEditLabel": "Yeni bir sipariş istasyon oluşturun veya değiştirin"
+            },
+            "created": "Tanımlayıcı {{ param }} olan bir Sipariş istasyon oluşturuldu",
+            "updated": "Tanımlayıcı {{ param }} olan bir sipariş istasyon değiştirildi",
+            "deleted": "Tanımlayıcı {{ param }} olan bir sipariş istasyon silindi",
+            "delete": {
+                "question": "Sipariş İstasyonu {{id}} 'yi silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Sipariş istasyon"
+            },
+            "order": "Sipariş",
+            "workstation": "istasyon",
+            "operation": "süreç",
+            "stationDatasets": "İstasyon Veri Setleri",
+            "stationStatisticalQuantity": "İstasyon İstatistik Miktarı"
+        }
+    }
+}

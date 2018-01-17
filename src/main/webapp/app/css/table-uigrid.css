@@ -1,0 +1,60 @@
+/*#############################################
+    table.uigrid
+###############################################*/
+.table-uigrid.ui-grid {
+    border-top-width: 1px;
+}
+.table-uigrid.ui-grid,
+.table-uigrid.ui-grid .ui-grid-header,
+.table-uigrid.ui-grid .ui-grid-footer-panel,
+.table-uigrid.ui-grid .ui-grid-cell,
+.table-uigrid.ui-grid input[type="text"].ui-grid-filter-input {
+    border-color: #dde6e9;
+}
+.table-uigrid.ui-grid .ui-grid-filter-input {
+    padding: 2px 4px;
+}
+.table-uigrid.ui-grid .ui-grid-row:nth-child(even) .ui-grid-cell {
+    background-color: #edf1f2;
+    border-bottom: 1px solid #e4eaec;
+    border-top: 1px solid #e4eaec;
+}
+.table-uigrid.ui-grid .ui-grid-header-cell:not(:last-child) .ui-grid-vertical-bar {
+    background-color: #dde6e9;
+}
+.table-uigrid.ui-grid .ui-grid-top-panel,
+.table-uigrid.ui-grid .ui-grid-footer-panel {
+    background-color: #fff;
+    background-image: none;
+}
+.table-uigrid.ui-grid .ui-grid-cell,
+.table-uigrid.ui-grid .ui-grid-row {
+    min-height: 36px;
+}
+.table-uigrid.ui-grid .ui-grid-cell-contents {
+    padding: 8px 8px;
+}
+.table-uigrid.ui-grid .ui-grid-column-menu-button {
+    top: 5px;
+}
+.table-uigrid.ui-grid .ui-grid-viewport {
+    overflow-x: hidden !important;
+}
+.table-uigrid.ui-grid .ui-grid-pager-panel {
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.table-uigrid.ui-grid .ui-grid-pager-control button {
+    background-color: #fff;
+    border: 1px solid #edf1f2;
+}
+.table-uigrid.ui-grid .ui-grid-pager-control input,
+.table-uigrid.ui-grid .ui-grid-pager-row-count-picker select {
+    color: #3a3f51;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #dde6e9;
+    border-radius: 4px;
+    padding: 2px;
+}
+

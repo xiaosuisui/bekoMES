@@ -1,0 +1,28 @@
+{
+    "bekoproApp": {
+        "tcsOrder" : {
+            "home": {
+                "title": "Tcs sipariş",
+                "createLabel": "Yeni bir Tcs sipariş oluşturun",
+                "createOrEditLabel": "Tcs sipariş oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Tcs sipariş oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Tcs sipariş güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Tcs sipariş sil",
+            "delete": {
+                "question": "Tcs sipariş {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Tcs sipariş"
+            },
+            "tcsOrderName": "Tcs sipariş adı",
+            "stationNo": "İstasyonlar No",
+            "consumePartName": "Parça Adını Kullan",
+            "consumePartQuantity": "Parça Miktarını Tüket",
+            "state": "durum",
+            "startTime": "Başlama zamanı",
+            "executingVehicleRegex": "Taşıt Regexini Çalıştırmak",
+            "type": "tip"
+        }
+    }
+}

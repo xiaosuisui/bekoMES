@@ -1,0 +1,109 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPalletLabel" data-translate="bekoproApp.failureReason.home.createOrEditLabel">Create or edit a cycleTimeTarget</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <fieldset>
+            <div class="form-group" ng-show="false">
+                <label class="col-sm-2 control-label" style="text-align:right" data-translate="global.field.id">ID</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="id" name="id"
+                           ng-model="vm.failureReason.id" readonly />
+                </div>
+                <div class="col-sm-4">
+                    <small class="text-muted">required</small>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.failureReason.workstation" for="field_workstation">workstation</label>
+                <div class="col-sm-6">
+                    <select ng-model="vm.failureReason.workstation"
+                            ng-selected="vm.failureReason.workstation" class="form-control" name="workstation">
+                        <option value="downTime">downTime</option>
+                        <option value="rotary">knobeStation</option>
+                        <option value="oven">burning</option>
+                        <option value="repair01">repair01</option>
+                        <option value="repair02">repair02</option>
+                    </select>
+                 <!--   <input type="text" class="form-control" name="workstation" id="field_workstation"
+                           ng-model="vm.failureReason.workstation"
+                           required/>-->
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.workstation.$invalid">
+                        <small ng-show="editForm.workstation.$error.required && editForm.workstation.$pristine && editForm.submitted">
+                            workstation is required
+                        </small>
+                        <small ng-show="editForm.workstation.$error.required && editForm.workstation.$dirty">
+                            workstation is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.failureReason.reason" for="field_reason"> reason</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="reason" id="field_reason"
+                           ng-model="vm.failureReason.reason"
+                           required/>
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.reason.$invalid">
+                        <small ng-show="editForm.reason.$error.required && editForm.reason.$pristine && editForm.submitted">
+                            reason is required
+                        </small>
+                        <small ng-show="editForm.reason.$error.required && editForm.reason.$dirty">
+                            reason is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.failureReason.type" for="field_type">type</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="lineId" id="field_type"
+                           ng-model="vm.failureReason.type"/>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.failureReason.description" for="field_description">description</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="description" id="field_description"
+                           ng-model="vm.failureReason.description" />
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
+<style>
+    .modal-content{
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    .warn{
+        color: red;
+    }
+</style>

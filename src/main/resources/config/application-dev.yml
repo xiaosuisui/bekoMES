@@ -1,0 +1,246 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overriden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+#
+# More information on profiles: https://jhipster.github.io/profiles/
+# More information on configuration properties: https://jhipster.github.io/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring:
+    profiles:
+        active: dev
+  #==================================================================
+  #  热部署
+  #==================================================================
+    devtools:
+        restart:
+            additional-paths: src/main/java
+            enabled: true
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        url: jdbc:sqlserver://10.114.0.118:1433;database=GasHobIMESdb
+        username: user_GasHob
+        password: 0T2@17gaZ++
+        hikari:
+            data-source-properties:
+                cachePrepStmts: true
+                prepStmtCacheSize: 250
+                prepStmtCacheSqlLimit: 2048
+                useServerPrepStmts: true
+    jpa:
+        database-platform: org.hibernate.dialect.SQLServer2012Dialect
+        database: SQL_SERVER
+        show-sql: true
+        hibernate:
+          ddl-auto: update
+        properties:
+            hibernate.id.new_generator_mappings: true
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: false
+            hibernate.cache.region.factory_class: com.mj.beko.config.NoDefaultJCacheRegionFactory
+
+#====================================================================
+server:
+    port: 8088
+    session:
+       persistent: false
+       timeout: 1800
+
+#====================================================================
+# ===================================================================
+# TCS properties
+# ===================================================================
+tcs:
+    host: 10.114.0.118
+    port: 55555
+    statusPort: 44444
+
+#=======================================================================
+jhipster:
+    http:
+        version: V_1_1 # To use HTTP/2 you will need SSL support (see above the "server.ssl" configuration)
+    cache: # Cache configuration
+        ehcache: # Ehcache configuration
+            time-to-live-seconds: 3600 # By default objects stay 1 hour in the cache
+            max-entries: 100 # Number of objects in each cache entry
+    cors:
+        allowed-origins: "*"
+        allowed-methods: GET, PUT, POST, DELETE, OPTIONS
+        allowed-headers: "*"
+        exposed-headers:
+        allow-credentials: true
+        max-age: 1800
+    security:
+        remember-me:
+            # security key (this key should be unique for your application, band kept secret)
+            key: a8eff181a38eea81466e0192b14e8b0384133791
+
+# ===================================================================
+#增加 从数据库配置，可以添加多个
+custom:
+    datasource:
+        names: ds1,ds2
+        ds1:
+            type: com.zaxxer.hikari.HikariDataSource
+            driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            url: jdbc:sqlserver://localhost:1433;database=test2
+            username: SA
+            password: root12345
+        ds2:
+            type: com.zaxxer.hikari.HikariDataSource
+            driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            url: jdbc:sqlserver://localhost:1433;database=test1
+            username: SA
+            password: root12345
+
+# ===================================================================
+# OpcUa properties
+# 配置OpcUa订阅节点需注意：
+# 1、同一类别对应于一个onDataChange处理事件
+# 2、同一设备出现多台，可参考下面格式书写配置，注意缩进，且必须写在类别的最前面，
+#    其中NodeBase 为所有节点的共有部分，No为设备编号，SubsribeNode为节点的变量名，No可以不写
+# 3、也可以单独配置单一节点
+# ===================================================================
+opcua:
+  retry:
+      connBackOffPeriod: 10000
+      maxAttempts: 3
+      backOffPeriod: 1000
+  publishingRate: 100
+  plcList:
+      #PLC1
+      - address: opc.tcp://10.114.21.170:4840
+        BottomPlateArriveAndLeft: NodeBase# "information"
+          - SubsribeNode# "Station1_ID", "Station1_leave"
+        TopPlateArriveAndLeft: NodeBase# "information"
+          - SubsribeNode# "Station2_ID", "Station2_leave"
+        ScrewStationLeft: NodeBase# "information"
+          - SubsribeNode# "Screwstation1_leave", "Screwstation2_leave", "Screwstation3_leave",
+                          "Screwstation4_leave", "Screwstation5_leave"
+        AirtightAndFluxAndElectricArrive: NodeBase# "information"
+          - SubsribeNode# "Station_airtight1_ID", "Station_airtight2_ID", "Station_flux1_ID",
+                          "Station_flux2_ID", "Station_electric_ID"
+        AirtightAndFluxAndElectricLeft: NodeBase# "information"
+          - SubsribeNode# "Station_airtight1_leave", "Station_airtight2_leave", "Station_flux1_leave",
+                          "Station_flux2_leave", "Station_electric_leave"
+        Repair1ArriveAndLeft: NodeBase# "information"
+          - SubsribeNode# "Repair_ID"
+
+      #PLC2
+      - address: opc.tcp://10.114.21.171:4840
+        BurnerSupportAndCapLackOfMaterial: NodeBase# "OPCOA"
+          - SubsribeNode# "BS1LeftLack", "BS1RightLack", "BS2LeftLack", "BS2RightLack",
+                          "BS3LeftLack", "BS3RightLack", "BS4LeftLack", "BS4RightLack",
+                          "BC1LeftLack", "BC1RightLack", "BC2LeftLack", "BC2RightLack"
+        BurnerSupportAndCapArrive: NodeBase# "OPCOA"
+          - SubsribeNode# "KnobStation_PalletCode", "1_Robot_PalletCode", "2_Robot_PalletCode", "3_Robot_PalletCode",
+                          "4_Robot_PalletCode", "5_Robot_PalletCode", "6_Robot_PalletCode"
+#                         "1BSPalletin", "2BSPalletin", "3BSPalletin", "4BSPalletin",
+#                         "1BCPalletin", "2BCPalletin"
+        BurnerSupportAndCapLeft: NodeBase# "OPCOA"
+          - SubsribeNode# "KnobsWorkOver"
+#                         "1BSWorkOver", "2BSWorkOver", "3BSWorkOver", "4BSWorkOver",
+#                         "1BCWorkOver", "2BCWorkOver"
+#        KnobsBoxLackOfMaterialAndArrive: NodeBase# "OPCOA"
+#          - SubsribeNode# "KnobBox_Empty"
+
+      #PLC3
+      - address: opc.tcp://10.114.21.172:4840
+        FireAndVisionAndRemoveGasArrive: NodeBase# "ITread"
+          - SubsribeNode# "ranshao_ID", "ranshao2_ID", "zhongjian_ID", "baxian_ID"
+        FireAndVisionAndRemoveGasLeft: NodeBase# "ITread"
+          - SubsribeNode# "ranshao_leave", "ranshao2_leave", "zhongjian_leave", "baxian_leave"
+        EPSLackOfMaterial: NodeBase# "ITread"
+          - SubsribeNode# "EPS_on_demand", "EPS_under_demand"
+#       EPSArrive: NodeBase# "ITread"
+#         - SubsribeNode# "EPS_on_exist"
+        Repair2ArriveAndLeft: NodeBase# "ITread"
+          - SubsribeNode# "fanxiu_ID"
+        LastStation: NodeBase# "ITread"
+          - SubsribeNode# "End_station"
+        UpEpsPutDownFinished: NodeBase# "ITread"
+          - SubsribeNode# "Place_Finish"
+        LastPrinterStart: NodeBase# "ITread"
+          - SubsribeNode# "In_position"
+        ProductPutFinished: NodeBase# "ITread"
+          - SubsribeNode# "Sebd_Labeling"
+        RobotPlaceProductDown: NodeBase# "ITread"
+          - SubsribeNode# "Product_placement_ok"
+        ReadPrinterLabel: NodeBase# "ITread"
+          - SubsribeNode# "Robot_Barcode_3_Position"
+        PackagingLabelMatch: NodeBase# "ITread"
+          - SubsribeNode# "PackagingLabelMatch"
+
+#扫描仪配置
+codeScanner:
+    host: 10.114.21.183
+    port: 23
+
+#配置显示机器的IP及对应的类型名称
+stationScreenAndIP:
+    10.114.21.185: BottomPlate  #下底盘工位
+    10.114.21.186: TopPlate  #上面板工位
+    10.114.21.187: Repair01  #1段返修工位
+    10.114.21.188: LeakageTest  #气密测试工位
+    10.114.21.189: FlowTest  #流量测试工位
+    10.114.21.190: ElectricTest  #电测试工位
+    10.114.21.191: Knobs  #旋钮工位
+    10.114.21.193: FireTest1  #主站火焰测试工位
+    10.114.21.192: FireTest2  #从站火焰测试工位
+    10.114.21.194: Repair02  #3段返修工位
+    10.114.21.195: VisionControl  #视觉控制工位
+    10.114.21.196: RemoveElectricAndGas  #拔气管工位
+    10.114.21.201: BottomPlate_tablet  #下底板工位tablet
+    10.114.21.202: TopPlate_tablet  #上面板工位tablet
+    10.114.21.203: Repair01_tablet  #1段返修工位tablet
+    10.114.21.204: Knobs_tablet  #旋钮工位tablet
+    10.114.21.205: FireTest1_tablet  #主站火焰测试工位tablet
+    10.114.21.206: FireTest2_tablet  #从站火焰测试工位tablet
+    10.114.21.207: Repair02_tablet  #3段返修工位tablet
+    10.114.21.208: VisionControl_tablet  #视觉控制工位tablet
+    10.114.21.209: RemoveElectricAndGas_tablet  #拔气管工位tablet
+    10.114.21.215: lineLeader_tablet
+    10.114.21.197: screenSupply  #物料区(scroller and liulijia)
+    10.114.21.198: epsSupply  #eps
+    10.114.21.199: plateSupply  #BottomPlateAndTopPlate
+    10.114.21.217: tvScreen01
+    10.114.21.218: tvScreen02
+    10.114.21.219: tvScreen03
+    191.72.240.146: VisionControl
+    192.168.2.109: lineLeader_tablet
+    10.114.21.182: Repair01_tablet
+    10.102.3.137: ElectricTest
+
+#HttpClient配置
+httpclient:
+    beko:
+        #beko接口地址
+        host: 10.114.0.118
+        #beko接口端口
+        port: 80
+    request:
+        #连接超时时间
+        connectTimeout: 10000
+        #数据传输超时时间
+        readTimeout: 100000
+        #连接不够用的等待时间
+        connectionRequestTimeout: 50
+    retry:
+        #重试次数
+        retryCount: 5
+        requestSentRetryEnabled: true
+
+    api:
+        employInfoByRfidCard: /GasAutomationApi/api/Employee/GetPersonnelInformation?hexCode=
+
+logging:
+  file: E:\GasHobIMES\log\beko.log

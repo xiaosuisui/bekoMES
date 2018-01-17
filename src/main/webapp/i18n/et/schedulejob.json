@@ -1,0 +1,22 @@
+{
+    "bekoproApp": {
+        "schedulejob" : {
+            "home": {
+                "title": "Işleri planla",
+                "createLabel": "Yeni bir Işleri planla oluşturun",
+                "createOrEditLabel": "Işleri planla oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Işleri planla oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Işleri planla güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Işleri planla sil",
+            "delete": {
+                "question": "Işleri planla {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Işleri planla"
+            },
+            "schedulenm": "Schedulenm",
+            "schedulecron": "Schedulecron"
+        }
+    }
+}

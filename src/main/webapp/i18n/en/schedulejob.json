@@ -1,0 +1,22 @@
+{
+    "bekoproApp": {
+        "schedulejob" : {
+            "home": {
+                "title": "Schedulejobs",
+                "createLabel": "Create a new Schedulejob",
+                "createOrEditLabel": "Create or edit a Schedulejob"
+            },
+            "created": "A new Schedulejob is created with identifier {{ param }}",
+            "updated": "A Schedulejob is updated with identifier {{ param }}",
+            "deleted": "A Schedulejob is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Schedulejob {{ id }}?"
+            },
+            "detail": {
+                "title": "Schedulejob"
+            },
+            "schedulenm": "Schedulenm",
+            "schedulecron": "Schedulecron"
+        }
+    }
+}

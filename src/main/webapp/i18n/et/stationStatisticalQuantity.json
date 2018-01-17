@@ -1,0 +1,25 @@
+{
+    "bekoproApp": {
+        "stationStatisticalQuantity" : {
+            "home": {
+                "title": "İstasyon İstatistik Miktarları",
+                "createLabel": "Yeni bir İstasyon İstatistik Miktarları oluşturun",
+                "createOrEditLabel": "İstasyon İstatistik Miktarları oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir İstasyon İstatistik Miktarları oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir İstasyon İstatistik Miktarları güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir İstasyon İstatistik Miktarları sil",
+            "delete": {
+                "question": "İstasyon İstatistik Miktarları {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "İstasyon İstatistik Miktarları"
+            },
+            "orderId": "Sipariş Id",
+            "stationNo": "İstasyonlar No",
+            "productNo": "Ürün No",
+            "quantity": "miktar",
+            "orderStation": "Sipariş İstasyonlar"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "bekoproApp": {
+        "role" : {
+            "home": {
+                "title": "角色",
+                "createLabel": "创建一个新角色",
+                "createOrEditLabel": "创建或编辑一个新角色"
+            },
+            "created": "角色{{ param }} 创建成功",
+            "updated": "角色{{ param }} 更新成功",
+            "deleted": "角色{{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除该角色吗?"
+            },
+            "detail": {
+                "title": "角色"
+            },
+            "name": "名称"
+        }
+    }
+}

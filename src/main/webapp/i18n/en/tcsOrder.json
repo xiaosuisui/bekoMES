@@ -1,0 +1,28 @@
+{
+    "bekoproApp": {
+        "tcsOrder" : {
+            "home": {
+                "title": "Tcs Orders",
+                "createLabel": "Create a new Tcs Order",
+                "createOrEditLabel": "Create or edit a Tcs Order"
+            },
+            "created": "A new Tcs Order is created with identifier {{ param }}",
+            "updated": "A Tcs Order is updated with identifier {{ param }}",
+            "deleted": "A Tcs Order is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Tcs Order {{ id }}?"
+            },
+            "detail": {
+                "title": "Tcs Order"
+            },
+            "tcsOrderName": "Tcs Order Name",
+            "stationNo": "Station No",
+            "consumePartName": "Consume Part Name",
+            "consumePartQuantity": "Consume Part Quantity",
+            "state": "State",
+            "startTime": "Start Time",
+            "executingVehicleRegex": "Executing Vehicle Regex",
+            "type": "Type"
+        }
+    }
+}

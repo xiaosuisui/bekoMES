@@ -1,0 +1,37 @@
+<div style="margin-top: 10px;margin-left: 10px;margin-right: 10px;background-color: white" >
+    <div class="container-fluid" style="padding-bottom: 10px">
+        <div class="row">
+            <div class="col-xs-8 col-sm-8" style="margin-top: 5px;margin-left: 10px">
+                <button class="btn btn-new btn-primary" ui-sref="app.main.operation.new" >
+                    <span  data-translate="bekoproApp.operation.home.createLabel">
+                        Create a operation
+                    </span>
+                </button>
+                <button class="btn btn-new btn-primary" style="margin-left: 5px" ng-disabled="vm.countRow" ui-sref="app.main.operation.edit({id:testRow.id})" >
+                    <span  data-translate="bekoproApp.operation.home.editLabel">
+                        Edit a operation
+                    </span>
+                </button>
+                <button class="btn btn-new btn-primary delete" style="margin-left: 5px"  ng-disabled="vm.countRow" ui-sref="app.main.operation.delete({id:testRow.id})" >
+                    <span  data-translate="bekoproApp.operation.home.deleteLabel">
+                        Delete a operation
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div data-ng-init="init()" id="uigridDiv" ui-grid="gridOptions"class="table-uigrid" style="width: 100%; text-align: center" ui-grid-edit ui-grid-pagination
+         ui-grid-selection ui-grid-exporter ui-grid-resize-columns ui-grid-auto-resize >
+    </div>
+</div>
+
+<style type="text/css">
+    .btn-new{
+        height: 25px;
+        line-height:12px;
+        padding: 5px 25px;
+    }
+    .delete{
+        padding: 5px 20px !important;
+    }
+</style>

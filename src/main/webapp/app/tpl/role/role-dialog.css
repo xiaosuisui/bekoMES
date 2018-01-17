@@ -1,0 +1,19 @@
+.control-label{
+    padding-right: 0px !important;
+    text-align: right;
+    line-height: 30px;
+    font-size: 16px;
+}
+.showMessage{
+    margin-left: -10px;
+    line-height: 28px;
+}
+.warn{
+    color: red;
+}
+.glyphicon{
+    line-height: 0px;
+}
+.panel{
+    background-color: whitesmoke;
+}

@@ -1,0 +1,27 @@
+{
+    "audits": {
+        "title": "Denetimler",
+        "filter": {
+            "title": "Tarihe göre filtreleme",
+            "from": "itibaren",
+            "to": "için",
+            "button": {
+                "weeks": "Haftalar",
+                "today": "bugün",
+                "clear": "kaldırmak",
+                "close": "kapat"
+            }
+        },
+        "table": {
+            "header": {
+                "principal": "kullanıcı",
+                "date": "tarih",
+                "status": "durum",
+                "data": "Ekstra veriler"
+            },
+            "data": {
+                "remoteAddress": "Uzak Adres:"
+            }
+        }
+    }
+}

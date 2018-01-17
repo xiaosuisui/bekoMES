@@ -1,0 +1,26 @@
+{
+    "bekoproApp": {
+        "role" : {
+            "home": {
+                "saveLabel":"kayıt etmek",
+                "title": "rol",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "createOrEditLabel": "rol oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir rol oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir rol güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir rol sil",
+            "delete": {
+                "question": "rol {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "rol"
+            },
+            "name": "adı",
+            "roleNo":"rol No",
+            "roleDesc":"rol açıklama"
+        }
+    }
+}

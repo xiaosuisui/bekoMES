@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "unitdicItems" : {
+            "home": {
+                "title": "Unitdic Items",
+                "createLabel": "Create a new Unitdic Items",
+                "createOrEditLabel": "Create or edit a Unitdic Items"
+            },
+            "created": "A new Unitdic Items is created with identifier {{ param }}",
+            "updated": "A Unitdic Items is updated with identifier {{ param }}",
+            "deleted": "A Unitdic Items is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Unitdic Items {{ id }}?"
+            },
+            "detail": {
+                "title": "Unitdic Items"
+            },
+            "name": "Name",
+            "type": "Type",
+            "unitdicGroup": "Unitdic Group"
+        }
+    }
+}

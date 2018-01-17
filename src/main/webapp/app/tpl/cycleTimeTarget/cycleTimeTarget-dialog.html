@@ -1,0 +1,103 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPalletLabel" data-translate="bekoproApp.cycleTimeTarget.home.createOrEditLabel">Create or edit a cycleTimeTarget</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <fieldset>
+            <div class="form-group" ng-show="false">
+                <label class="col-sm-2 control-label" style="text-align:right" data-translate="global.field.id">ID</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="id" name="id"
+                           ng-model="vm.cycleTimeTarget.id" readonly />
+                </div>
+                <div class="col-sm-4">
+                    <small class="text-muted">required</small>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.cycleTimeTarget.proNoduct" for="field_palletName">Pallet Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="productNo" id="field_palletName"
+                           ng-model="vm.cycleTimeTarget.productNo"
+                           required/>
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.productNo.$invalid">
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$pristine && editForm.submitted">
+                            productNo is required
+                        </small>
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$dirty">
+                            productNo is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.cycleTimeTarget.lineId" for="field_palletNo">Pallet No</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="lineId" id="field_palletNo"
+                           ng-model="vm.cycleTimeTarget.lineId"
+                           required/>
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.lineId.$invalid">
+                        <small ng-show="editForm.lineId.$error.required && editForm.lineId.$pristine && editForm.submitted">
+                            lineId is required
+                        </small>
+                        <small ng-show="editForm.lineId.$error.required && editForm.lineId.$dirty">
+                            lineId is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.cycleTimeTarget.target" for="field_target">Pallet No</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="lineId" id="field_target"
+                           ng-model="vm.cycleTimeTarget.target"
+                           required/>
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.target.$invalid">
+                        <small ng-show="editForm.target.$error.required && editForm.target.$pristine && editForm.submitted">
+                            target is required
+                        </small>
+                        <small ng-show="editForm.target.$error.required && editForm.target.$dirty">
+                            target is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
+<style>
+    .modal-content{
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    .warn{
+        color: red;
+    }
+</style>

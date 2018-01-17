@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "operationDatasets" : {
+            "home": {
+                "title": "Operation Datasets",
+                "createLabel": "Create a new Operation Datasets",
+                "createOrEditLabel": "Create or edit a Operation Datasets"
+            },
+            "created": "A new Operation Datasets is created with identifier {{ param }}",
+            "updated": "A Operation Datasets is updated with identifier {{ param }}",
+            "deleted": "A Operation Datasets is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Operation Datasets {{ id }}?"
+            },
+            "detail": {
+                "title": "Operation Datasets"
+            },
+            "operationKey": "Operation Key",
+            "operationValue": "Operation Value",
+            "operation": "Operation"
+        }
+    }
+}

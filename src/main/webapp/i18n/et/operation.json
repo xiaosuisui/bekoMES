@@ -1,0 +1,35 @@
+{
+    "bekoproApp": {
+        "operation" : {
+            "home": {
+                "title": "süreç",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "createOrEditLabel": "süreç oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir süreç oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir süreç güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir süreç sil",
+            "delete": {
+                "question": "süreç {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "süreç"
+            },
+            "operationNo":"süreç No",
+            "oprerationName":"süreç Adı",
+            "workstation":"İstasyonlar",
+            "operationName": "süreç Adı",
+            "operationDesc": "süreç azalan",
+            "seqNo": "dizi No",
+            "operationAllocation": "süreç Tahsis",
+            "operationDuration": "süreç süre",
+            "operationStdManSec": "süreç Standart saat",
+            "operationDateReleased": "süreç Çıkış Tarihi",
+            "orderStation": "Sipariş İstasyonu",
+            "operationDatasets": "süreç Veri Setleri",
+            "consumedParts": "Tüketilen Parçalar"
+        }
+    }
+}

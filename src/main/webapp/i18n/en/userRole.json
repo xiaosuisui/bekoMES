@@ -1,0 +1,14 @@
+{
+    "bekoproApp":{
+        "userrole":{
+            "USERINFORMATION":"UserName:",
+            "home":{
+                "createLabel":"Add",
+                "editLabel":"Edit",
+                "deleteLabel":"Delete"
+            }
+
+        }
+}
+
+}

@@ -1,0 +1,44 @@
+.repair_container{
+    margin-top:10px;
+    margin-left:10px;
+    margin-right: 10px;
+    background-color: white
+}
+.container-fluid{
+    padding-bottom: 10px
+}
+.title_page{
+    font-weight:lighter;
+    opacity: 0.9;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.rowConfig{
+    border-top: 0.8px solid bisque;
+}
+.col_config{
+    margin-top: 10px;margin-left: 10px;
+}
+.search_config{
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.btn-new{
+    height: 25px;
+    line-height:12px;
+    padding: 5px 25px;
+}
+.delete{
+    padding: 5px 20px !important;
+}
+.search_config{
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.button_config{
+    margin-left: -50px;
+    margin-top: 15px;
+}
+.table_config{
+    width:100%; text-align: center;
+}

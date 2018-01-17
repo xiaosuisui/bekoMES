@@ -1,0 +1,40 @@
+{
+    "aside": {
+        "title": "Sign in",
+        "nav": {
+            "Order":"Order Management",
+            "ORDERMANAGEMENT": "Order Management",
+            "ORDERPLAN":"Order Plan",
+            "ORDERPRODUCTION":"Production Order",
+            "BASIC":"Basic Menu",
+            "LOG":"Log Management",
+            "SYSCONFIG":"SysConfig",
+            "SHIFT":"shift",
+            "PALLET":"Pallet",
+            "DATACOLLECT":"Data Collect",
+            "PRODUCT":"Product ",
+            "WORKSTATION":"WorkStation",
+            "TESTSTATIONDATA":"TestStationData",
+            "HEADER": "Navigation",
+            "button": "Sign in",
+            "PRODUCTCODE":"ProductCode",
+            "ORDERUPDATELOG":"OrderLog",
+            "cycleTimeTarget":"HourTarget",
+            "TVDATACONFIG":"TvDataConfig",
+            "FAILUREREASON":"FailureReason",
+            "PRODUCTREPAIR":"ProductRepair",
+            "PRODUCTRESOURCEFILE":"ProductResource",
+            "USERINFORMATION":"User",
+            "ROLEINFORMATION":"Role",
+            "OPERATION":"Operation",
+            "FAILUREREASONDATA":"FailureData",
+            "OPERATORDATA":"LoginData",
+            "TESTSTATIONDATA":"TestStationData",
+            "DOWNTIMEDATA":"DownTimeData",
+            "AGV":"AGV",
+            "DATATRACK":"DataTrack",
+            "TCSORDER":"tcsOrder"
+        }
+    }
+}
+

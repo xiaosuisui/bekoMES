@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "operationDatasets" : {
+            "home": {
+                "title": "süreç Veri Setleri",
+                "createLabel": "Yeni bir süreç Veri Seti Yarat",
+                "createOrEditLabel": "süreç Veri Setleri oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir süreç Veri Setleri oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir süreç Veri Setleri güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir süreç Veri Setleri sil",
+            "delete": {
+                "question": "süreç Veri Setleri {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "süreç Veri Setleri"
+            },
+            "operationKey": "süreç anahtar",
+            "operationValue": "süreç değer",
+            "operation": "süreç"
+        }
+    }
+}

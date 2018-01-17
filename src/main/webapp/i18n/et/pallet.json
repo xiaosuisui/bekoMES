@@ -1,0 +1,30 @@
+{
+    "bekoproApp": {
+        "PalletState":{
+            "A":"normal",
+            "B":"Montaj hattından çık",
+            "C":"Boş disk"
+    },
+        "pallet" : {
+            "home": {
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "title": "Paletler",
+                "createLabel": "yeni",
+                "createOrEditLabel": "Palet oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Palet yarat",
+            "updated": "tanımlayıcı {{ param }} olan bir Paleti güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Paleti sil",
+            "delete": {
+                "question": "Palet'i {{ id }} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Paletler"
+            },
+            "palletName": "Palet adı",
+            "palletNo": "Palet Hayır",
+            "state": "durum"
+        }
+    }
+}

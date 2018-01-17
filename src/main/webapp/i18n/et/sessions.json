@@ -1,0 +1,15 @@
+{
+    "sessions": {
+        "title": "Için etkin oturumlar [<b>{{username}}</b>]",
+        "table": {
+            "ipaddress": "IP adres",
+            "useragent": "Kullanıcı Aracı",
+            "date": "tarih",
+            "button": "geçersiz kılmak"
+        },
+        "messages": {
+            "success": "<strong>konuşma geçersiz!</strong>",
+            "error": "<strong>bir hata oluştu!</strong> konuşma geçersiz kılınamadı."
+        }
+    }
+}

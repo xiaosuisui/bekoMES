@@ -1,0 +1,113 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPalletLabel" data-translate="bekoproApp.tvDataConfig.home.createOrEditLabel">Create or edit a cycleTimeTarget</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <fieldset>
+            <div class="form-group" ng-show="false">
+                <label class="col-sm-2 control-label" style="text-align:right" data-translate="global.field.id">ID</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="id" name="id"
+                           ng-model="vm.tvDataConfig.id" readonly />
+                </div>
+                <div class="col-sm-4">
+                    <small class="text-muted">required</small>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.tvDataConfig.tvName" for="field_palletName">tvName</label>
+                <div class="col-sm-6">
+                    <select ng-model="vm.tvDataConfig.tvName"  ng-change="change(vm.tvDataConfig.tvName)"
+                            ng-selected="vm.tvDataConfig.tvName" class="form-control" name="tvName">
+                        <option value=""> please choose</option>
+                        <option value="tvScreen001">tvScreen001</option>
+                        <option value="tvScreen002">tvScreen002</option>
+                        <option value="tvScreen003">tvScreen003</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.tvName.$invalid">
+                        <small ng-show="editForm.tvName.$error.required && editForm.tvName.$pristine && editForm.submitted">
+                            tvName is required
+                        </small>
+                        <small ng-show="editForm.tvName.$error.required && editForm.tvName.$dirty">
+                            tvName is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.tvDataConfig.pageName" for="field_pageName">pageName </label>
+                <div class="col-sm-6">
+                    <select  ng-model="vm.tvDataConfig.pageName" class="form-control" name="tvName" id="field_pageName">
+                         <option value=""> please choose</option>
+                         <option ng-repeat="name in pageNames" value="{{name.id}}">{{name.name}}</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <div class="warn" ng-show="editForm.pageName.$invalid">
+                        <small ng-show="editForm.pageName.$error.required && editForm.pageName.$pristine && editForm.submitted">
+                            pageName is required
+                        </small>
+                        <small ng-show="editForm.pageName.$error.required && editForm.pageName.$dirty">
+                            pageName is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.tvDataConfig.isShow" for="field_isShow"> isShow</label>
+                <div class="col-sm-6">
+                    <select  ng-model="vm.tvDataConfig.isShow" class="form-control" name="isShow" id="field_isShow">
+                        <option value=""> please choose</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.tvDataConfig.frequence" for="field_frequence">frequence</label>
+                <div class="col-sm-6">
+                    <select  ng-model="vm.tvDataConfig.frequence" class="form-control" name="frequence" id="field_frequence">
+                         <option value=""> please choose</option>
+                         <option value="30000">low</option>
+                         <option value="20000">mid</option>
+                        <option value="10000">high</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
+<style>
+    .modal-content{
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    .warn{
+        color: red;
+    }
+</style>

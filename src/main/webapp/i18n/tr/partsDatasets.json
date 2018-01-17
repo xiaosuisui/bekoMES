@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "partsDatasets" : {
+            "home": {
+                "title": "Parts Datasets",
+                "createLabel": "Create a new Parts Datasets",
+                "createOrEditLabel": "Create or edit a Parts Datasets"
+            },
+            "created": "A new Parts Datasets is created with identifier {{ param }}",
+            "updated": "A Parts Datasets is updated with identifier {{ param }}",
+            "deleted": "A Parts Datasets is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Parts Datasets {{ id }}?"
+            },
+            "detail": {
+                "title": "Parts Datasets"
+            },
+            "partKey": "Part Key",
+            "partValue": "Part Value",
+            "consumedParts": "Consumed Parts"
+        }
+    }
+}

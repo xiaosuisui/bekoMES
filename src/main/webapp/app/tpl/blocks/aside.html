@@ -1,0 +1,299 @@
+<div class="aside-wrap">
+  <div class="navi-wrap">
+    <!-- nav -->
+    <nav ui-nav class="navi">
+        <!-- menu list -->
+        <ul class="nav">
+            <!--menu for order module start-->
+            <li style="margin-top: 15px">
+                <a href class="auto">
+                      <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                      </span>
+                    <i class="iconfont icon-dingdan"></i>
+                    <span class="font-bold" translate="aside.nav.ORDERMANAGEMENT">Order Management</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.ORDERMANAGEMENT">Ordr Management</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" has-urls="/orders">
+                        <a ui-sref="app.main.orders">
+                            <span translate="aside.nav.ORDERPLAN">Order Plan</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" has-urls="/orderProduction">
+                        <a ui-sref="app.main.orderProduction">
+                            <span translate="aside.nav.ORDERPRODUCTION">Order Production</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- menu for order module end-->
+            <!--meun for basic module start-->
+            <li>
+                <a href class="auto">
+                      <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                      </span>
+                    <i class="iconfont icon-dingdan"></i>
+                    <span class="font-bold" translate="aside.nav.BASIC">BASIC</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.BASIC">BASIC</span>
+                        </a>
+                    </li>
+                    <!--USER-->
+                    <li ui-sref-active="active" has-Urls="/user">
+                        <a ui-sref="app.main.user">
+                            <i class="iconfont icon-yonghu"></i>
+                            <span class="font-bold" translate="aside.nav.USERINFORMATION">User</span>
+                        </a>
+                    </li>
+                    <!--ROLE-->
+                    <li ui-sref-active="active" has-Urls="/role">
+                        <a ui-sref="app.main.role">
+                            <i class="iconfont icon-jiaose"></i>
+                            <span class="font-bold" translate="aside.nav.ROLEINFORMATION">Role</span>
+                        </a>
+                    </li>
+                    <!--WORKSTATION-->
+                    <li ui-sref-active="active" has-Urls="/workstation">
+                        <a ui-sref="app.main.workstation">
+                            <i class="iconfont icon-gongwei"></i>
+                            <span class="font-bold" translate="aside.nav.WORKSTATION">Workstation</span>
+                        </a>
+                    </li>
+                    <!--OPERATION-->
+                    <li ui-sref-active="active" has-Urls="/operation">
+                        <a ui-sref="app.main.operation">
+                            <i class="iconfont icon-shengchangongxuchaxun"></i>
+                            <span class="font-bold" translate="aside.nav.OPERATION">Operation</span>
+                        </a>
+                    </li>
+                    <!--pallet menu-->
+                    <li ui-sref-active="active" has-Urls="/pallets">
+                        <a ui-sref="app.main.pallet">
+                            <i class="iconfont icon-111333"></i>
+                            <span class="font-bold" translate="aside.nav.PALLET">Pallet Management</span>
+                        </a>
+                    </li>
+                    <!--SHIFT-->
+                    <li ui-sref-active="active" has-Urls="/shift">
+                        <a ui-sref="app.main.shift">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.SHIFT">SHIFT</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--menu for basic module end-->
+            <!--menu for log start-->
+            <li>
+                <a href class="auto">
+                      <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                      </span>
+                    <i class="iconfont icon-dingdan"></i>
+                    <span class="font-bold" translate="aside.nav.LOG">Log Management</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.LOG">log management</span>
+                        </a>
+                    </li>
+                    <!--order update log-->
+                    <li ui-sref-active="active" has-urls="/orderUpdateLog">
+                         <a ui-sref="app.main.orderUpdateLog">
+                             <i class="iconfont icon-caozuo"></i>
+                             <span class="font-bold" translate="aside.nav.ORDERUPDATELOG">OrderUpdateLog</span>
+                         </a>
+                    </li>
+                    <!--operator login log-->
+                    <li ui-sref-active="active"  has-Urls="/operator-data">
+                        <a ui-sref="app.main.operator-data">
+                            <i class="iconfont icon-caozuo"></i>
+                            <span class="font-bold" translate="aside.nav.OPERATORDATA">operatordata</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--menu for log end-->
+            <!--menu for sysConfig start-->
+            <li>
+                <a href class="auto">
+                      <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                      </span>
+                    <i class="iconfont icon-dingdan"></i>
+                    <span class="font-bold" translate="aside.nav.SYSCONFIG">SysConfig menu</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.SYSCONFIG">SysConfig Menu</span>
+                        </a>
+                    </li>
+                    <!--cycle time target menu-->
+                    <li ui-sref-active="active" has-Urls="/cycleTimeTarget">
+                        <a ui-sref="app.main.cycleTimeTarget">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.cycleTimeTarget">cycleTimeData</span>
+                        </a>
+                    </li>
+                    <!--tvDataConfig menu-->
+                    <li ui-sref-active="active" has-Urls="/tvDataConfig">
+                        <a ui-sref="app.main.tvDataConfig">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.TVDATACONFIG">tvDataConfig</span>
+                        </a>
+                    </li>
+                    <!--failure reason config-->
+                    <li ui-sref-active="active" has-Urls="/failureReason">
+                        <a ui-sref="app.main.failureReason">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.FAILUREREASON">failureReason</span>
+                        </a>
+                    </li>
+                    <!--product resource File-->
+                    <li ui-sref-active="active" has-Urls="/productResourceFile">
+                        <a ui-sref="app.main.productResourceFile">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.PRODUCTRESOURCEFILE">productResource</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <!--menu for sysConfig end-->
+            <!--menu for data collect start-->
+            <li>
+                <a href class="auto">
+                      <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                      </span>
+                    <i class="iconfont icon-dingdan"></i>
+                    <span class="font-bold" translate="aside.nav.DATACOLLECT">Data Collect</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.DATACOLLECT">Data Collect</span>
+                        </a>
+                    </li>
+                    <!--failure reason data collect-->
+                    <li ui-sref-active="active" has-Urls="/failureReasonData">
+                        <a ui-sref="app.main.failureReasonData">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.FAILUREREASONDATA">failureReason</span>
+                        </a>
+                    </li>
+                    <!--testStation data-->
+                    <li ui-sref-active="active" has-Urls="/testStationData">
+                        <a ui-sref="app.main.testStationData">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.TESTSTATIONDATA">testStationData</span>
+                        </a>
+                    </li>
+                    <!--downTime data-->
+                    <li ui-sref-active="active"  has-Urls="/downTimeData">
+                        <a ui-sref="app.main.downTimeData">
+                            <i class="iconfont icon-caozuo"></i>
+                            <span class="font-bold" translate="aside.nav.DOWNTIMEDATA">downtimedata</span>
+                        </a>
+                    </li>
+                    <!--product repair data-->
+                    <li  ui-sref-active="active" has-Urls="/productRepair">
+                        <a ui-sref="app.main.productRepair">
+                            <i class="iconfont icon-caozuo"></i>
+                            <span class="font-bold" translate="aside.nav.PRODUCTREPAIR">productRepair</span>
+                        </a>
+                    </li>
+                    <!--productCode-->
+                    <li ui-sref-active="active" has-Urls="/productCode">
+                        <a ui-sref="app.main.productCcode">
+                            <i class="iconfont icon-caozuo"></i>
+                            <span class="font-bold" translate="aside.nav.PRODUCTCODE">productCode</span>
+                        </a>
+                    </li>
+                    <!--data track-->
+                    <li ui-sref-active="active" has-Urls="/production-data">
+                        <a ui-sref="app.main.production-data">
+                            <i class="iconfont icon-shujuzhuizong"></i>
+                            <span class="font-bold" translate="aside.nav.DATATRACK">DATATRACK</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--menu for data collect end-->
+            <!--menu for agv start-->
+            <li>
+                <a href class="auto">
+                    <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                    </span>
+                    <i class="iconfont icon-chanpin"></i>
+                    <span class="font-bold" translate="aside.nav.AGV">AGV</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.AGV">AGV</span>
+                        </a>
+                    </li>
+                    <!--tcs Order-->
+                    <li ui-sref-active="active" has-Urls="/tcs-order">
+                        <a ui-sref="app.main.tcs-order">
+                            <i class="iconfont icon-dingdandiaodu"></i>
+                            <span class="font-bold" translate="aside.nav.TCSORDER">tcsOrder</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--menu for agv end-->
+
+            <!--修改默认的产品菜单-->
+            <li>
+                <a href class="auto">
+                    <span class="pull-right text-muted">
+                        <i class="fa fa-fw fa-angle-right text"></i>
+                        <i class="fa fa-fw fa-angle-down text-active"></i>
+                    </span>
+                    <i class="iconfont icon-chanpin"></i>
+                    <span class="font-bold" translate="aside.nav.PRODUCT">product</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                        <a href>
+                            <span translate="aside.nav.PRODUCT">PRODUCT</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" has-Urls="/product">
+                        <a ui-sref="app.main.product">
+                            <i class="iconfont icon-chanpin"></i>
+                            <span class="font-bold" translate="aside.nav.PRODUCT">product</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--数据采集菜单显示-->
+
+
+
+            <!--增加侧边栏溢出显示测试-->
+        </ul>
+        <!-- / list -->
+    </nav>
+  </div>
+</div>

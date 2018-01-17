@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="bekoproApp.operatorData.detail.title">Operator Data</span> {{vm.operatorData.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="bekoproApp.operatorData.operator">Operator</span></dt>
+        <dd>
+            <span>{{vm.operatorData.operator}}</span>
+        </dd>
+        <dt><span data-translate="bekoproApp.operatorData.operation">Operation</span></dt>
+        <dd>
+            <span>{{vm.operatorData.operation}}</span>
+        </dd>
+        <dt><span data-translate="bekoproApp.operatorData.operationTime">Operation Time</span></dt>
+        <dd>
+            <span>{{vm.operatorData.operationTime | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="operator-data-detail.edit({id:vm.operatorData.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,35 @@
+{
+    "bekoproApp": {
+        "ProductType":{
+            "PDF":"PDF",
+            "Excel":"Excel",
+            "Word":"Word",
+            "Video":"Video",
+            "Picture":"Picture"
+        },
+        "productResourceFile" : {
+            "FILE":"Select File",
+            "DELETEPIC":"delete",
+            "home": {
+                "title": "ProductResourceFiles",
+                "createLabel": "Add",
+                "editLabel":"Edit",
+                "deleteLabel":"Delete",
+                "createOrEditLabel": "Create or edit a ProductResourceFile"
+            },
+            "created": "A new ProductResourceFile is created with identifier {{ param }}",
+            "updated": "A ProductResourceFile is updated with identifier {{ param }}",
+            "deleted": "A ProductResourceFile is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ProductResourceFile {{ id }}?"
+            },
+            "detail": {
+                "title": "ProductResourceFile"
+            },
+            "productNo": "Product No",
+            "workstationId": "Workstation Id",
+            "type": "Type",
+            "storageLocation": "Storage Location"
+        }
+    }
+}

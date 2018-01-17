@@ -1,0 +1,27 @@
+{
+    "bekoproApp": {
+        "workstation" : {
+            "home": {
+                "title": "工位",
+                "createLabel": "创建一个新的工位",
+                "createOrEditLabel": "创建或编辑一个工位"
+            },
+            "created": "工位{{ param }} 创建成功",
+            "updated": "工位{{ param }} 更新成功",
+            "deleted": "工位{{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除该工位?"
+            },
+            "detail": {
+                "title": "工位"
+            },
+            "stationNo": "工位编号",
+            "stationName": "工位名称",
+            "desc": "排序",
+            "allocationPercent": "分配百分比",
+            "lastModifiedDate": "最后修改日期",
+            "stationId": "工位ID",
+            "orderStation": "Order Station"
+        }
+    }
+}

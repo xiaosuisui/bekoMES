@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "operatorData" : {
+            "home": {
+                "title": "Operator Data",
+                "createLabel": "Create a new Operator Data",
+                "createOrEditLabel": "Create or edit a Operator Data"
+            },
+            "created": "A new Operator Data is created with identifier {{ param }}",
+            "updated": "A Operator Data is updated with identifier {{ param }}",
+            "deleted": "A Operator Data is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Operator Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Operator Data"
+            },
+            "operator": "Operator",
+            "operation": "Operation",
+            "operationTime": "Operation Time"
+        }
+    }
+}

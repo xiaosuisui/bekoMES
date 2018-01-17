@@ -1,0 +1,30 @@
+{
+    "bekoproApp": {
+        "workstation" : {
+            "home": {
+                "title": "İstasyonlar",
+                "createLabel": "yeni",
+                "editLabel": "Düzenleme",
+                "deleteLabel": "silmek",
+                "createOrEditLabel": "istasyon oluşturma veya düzenleme"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir İstasyonlar oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir İstasyonlar güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir İstasyonlar sil",
+            "delete": {
+                "question": "Istasyonu {{ id }} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "İstasyonlar"
+            },
+            "stationNo": "İstasyonlar No",
+            "stationName": "İstasyon Adı",
+            "seqNo":"dizi No",
+            "desc": "azalan",
+            "allocationPercent": "Tahsis Yüzdesi",
+            "lastModifiedDate": "Son Değiştirilen Tarih",
+            "stationId": "İstasyonlar ID",
+            "orderStation": "Sipariş İstasyonu"
+        }
+    }
+}

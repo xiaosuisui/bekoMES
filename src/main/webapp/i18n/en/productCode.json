@@ -1,0 +1,27 @@
+{
+    "bekoproApp": {
+        "productCode" : {
+            "home": {
+                "title": "Product Codes",
+                "createLabel": "Create a new Product Code",
+                "createOrEditLabel": "Create or edit a Product Code"
+            },
+            "created": "A new Product Code is created with identifier {{ param }}",
+            "updated": "A Product Code is updated with identifier {{ param }}",
+            "deleted": "A Product Code is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Product Code {{ id }}?"
+            },
+            "detail": {
+                "title": "Product Code"
+            },
+            "productNo": "Product No",
+            "serialNo": "Serial No",
+            "productCode": "Product Code",
+            "orderNo": "Order No",
+            "status": "Status",
+            "createDate": "Create Date",
+            "printDate": "Print Date"
+        }
+    }
+}

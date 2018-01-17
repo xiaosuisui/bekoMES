@@ -1,0 +1,24 @@
+{
+    "bekoproApp": {
+        "consumedParts" : {
+            "home": {
+                "title": "Tüketilen Parçalar",
+                "createLabel": "Yeni bir Tüketilen Parçalar oluşturun",
+                "createOrEditLabel": "Tüketilen Parçalar oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Tüketilen Parçalar oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Tüketilen Parçalar güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Tüketilen Parçalar sil",
+            "delete": {
+                "question": "Tüketilen Parçalar {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Tüketilen Parçalar"
+            },
+            "partName": "Bölüm adı",
+            "partDateReleased": "Bölüm Çıkış Tarihi",
+            "operation": "süreç",
+            "partsDatasets": "Bölüm Veri Setleri"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "reset": {
+        "request": {
+            "title": "Şifrenizi sıfırlayın",
+            "form": {
+                "button": "Şifreyi yenile"
+            },
+            "messages": {
+                "info": "Kaydolmak için kullandığınız e-posta adresini giriniz",
+                "success": "Parolanızı nasıl sıfırlayacağınıza ilişkin ayrıntılar için e-postalarınızı kontrol edin.",
+                "notfound": "<strong>E-posta adresi kayıtlı değil!</strong> Lütfen kontrol edip tekrar deneyin"
+            }
+        },
+        "finish" : {
+            "title": "Şifrenizi sıfırlayın",
+            "form": {
+                "button": "Yeni şifreyi onayla"
+            },
+            "messages": {
+                "info": "Yeni bir şifre seçin",
+                "success": "<strong>Şifreniz sıfırlandı.</strong> Lütfen <a class=\"alert-link\" href=\"\" ng-click=\"vm.login()\">giriş yap</a>.",
+                "keymissing": "Sıfırlama anahtarı eksik.",
+                "error": "Şifreniz sıfırlanamadı. Parola talebinin yalnızca 24 saat geçerli olduğunu unutmayın."
+            }
+        }
+    }
+}

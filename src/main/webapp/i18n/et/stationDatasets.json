@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "stationDatasets" : {
+            "home": {
+                "title": "İstasyonlar Veri Setleri",
+                "createLabel": "Yeni bir İstasyonlar Veri Setleri oluşturun",
+                "createOrEditLabel": "İstasyonlar Veri Setleri oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir İstasyonlar Veri Setleri oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir İstasyonlar Veri Setleri güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir İstasyonlar Veri Setleri sil",
+            "delete": {
+                "question": "İstasyonlar Veri Setleri {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "İstasyonlar Veri Setleri"
+            },
+            "stationKey": "İstasyonlar anahtar",
+            "stationValue": "İstasyonlar değer",
+            "orderStation": "Sipariş İstasyonlar"
+        }
+    }
+}

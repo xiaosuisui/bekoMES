@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "partsDatasets" : {
+            "home": {
+                "title": "Parça Veri Setleri",
+                "createLabel": "Yeni bir Parça Veri Setleri oluşturun",
+                "createOrEditLabel": "Parça Veri Setleri oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Parça Veri Setleri oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Parça Veri Setleri güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Parça Veri Setleri sil",
+            "delete": {
+                "question": "Parça Veri Setleri {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Parça Veri Setleri"
+            },
+            "partKey": "Parça anahtar",
+            "partValue": "Parça değer",
+            "consumedParts": "Tüketilen Parçalar"
+        }
+    }
+}

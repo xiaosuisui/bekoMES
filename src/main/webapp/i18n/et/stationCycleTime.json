@@ -1,0 +1,28 @@
+{
+    "bekoproApp": {
+        "stationCycleTime" : {
+            "home": {
+                "title": "İstasyonlar Çevrim Zamanları",
+                "createLabel": "Yeni bir İstasyonlar Çevrim Zamanları oluşturun",
+                "createOrEditLabel": "İstasyonlar Çevrim Zamanları oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir İstasyonlar Çevrim Zamanları oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir İstasyonlar Çevrim Zamanları güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir İstasyonlar Çevrim Zamanları sil",
+            "delete": {
+                "question": "İstasyonlar Çevrim Zamanları {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "İstasyonlar Çevrim Zamanları"
+            },
+            "bottomPlaceCode": "Şasi barkodu",
+            "productNo": "ürün No",
+            "bottomPlateStationStart": "Alt Tabak İstasyonu Başlangıç Saati",
+            "bottomPlateStationEnd": "Alt Tabak İstasyonu Bitiş Saati",
+            "bottomPlateStationCycleTime": "Alt Tabak İstasyonu Döngü Süresi",
+            "topPlateStationStart": "Üst Tabakalı İstasyon Başlama Saati",
+            "topPlateStationEnd": "Üst Tabakalı İstasyon Bitiş Zamanı",
+            "topPlateStationCycleTime": "Üst Tabla İstasyonu Döngü Saati"
+        }
+    }
+}

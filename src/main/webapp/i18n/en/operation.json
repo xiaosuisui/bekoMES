@@ -1,0 +1,35 @@
+{
+    "bekoproApp": {
+        "operation" : {
+            "home": {
+                "title": "Operations",
+                "createLabel": "Add",
+                "editLabel":"Edit",
+                "deleteLabel":"Delete",
+                "createOrEditLabel": "Create or edit a Operation"
+            },
+            "created": "A new Operation is created with identifier {{ param }}",
+            "updated": "A Operation is updated with identifier {{ param }}",
+            "deleted": "A Operation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Operation {{ id }}?"
+            },
+            "detail": {
+                "title": "Operation"
+            },
+            "operationNo":"operationNo",
+            "oprerationName":"operationName",
+            "workstation":"workstation",
+            "operationName": "Operation Name",
+            "operationDesc": "Operation Desc",
+            "seqNo": "Seq No",
+            "operationAllocation": "Operation Allocation",
+            "operationDuration": "Operation Duration",
+            "operationStdManSec": "Operation Std Man Sec",
+            "operationDateReleased": "Operation Date Released",
+            "orderStation": "Order Station",
+            "operationDatasets": "Operation Datasets",
+            "consumedParts": "Consumed Parts"
+        }
+    }
+}

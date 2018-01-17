@@ -1,0 +1,22 @@
+{
+    "bekoproApp": {
+        "dictItem" : {
+            "home": {
+                "title": "sözlük madde",
+                "createLabel": "Yeni bir sözlük madde oluşturun",
+                "createOrEditLabel": "sözlük madde oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir sözlük madde oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir sözlük madde güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir sözlük madde sil",
+            "delete": {
+                "question": "sözlük madde {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "sözlük madde"
+            },
+            "value": "değer",
+            "value1": "değer 1"
+        }
+    }
+}

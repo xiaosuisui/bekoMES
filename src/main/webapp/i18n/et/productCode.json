@@ -1,0 +1,27 @@
+{
+    "bekoproApp": {
+        "productCode" : {
+            "home": {
+                "title": "Ürün Kodları",
+                "createLabel": "Yeni Ürün Kodu Oluşturun",
+                "createOrEditLabel": "Ürün Kodu Oluşturma veya Düzenleme"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Ürün Kodu oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Ürün Kodu güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Ürün Kodunu sil",
+            "delete": {
+                "question": "Ürün Kodunu {{ id }} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Ürün Kodları"
+            },
+            "productNo": "ürün No",
+            "serialNo": "Seri numarası",
+            "productCode": "Ürün Kodları",
+            "orderNo": "Sipariş No",
+            "status": "durum",
+            "createDate": "Oluşturma Tarihi",
+            "printDate": "Basım tarihi"
+        }
+    }
+}

@@ -1,0 +1,181 @@
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myProductLabel" data-translate="bekoproApp.product.home.createOrEditLabel">Create or
+            edit a Product</h4>
+    </div>
+    <div class="modal-body">
+        <fieldset style="margin-top: 15px">
+                <label class="col-sm-2 control-label" style="text-align: right"
+                       data-translate="bekoproApp.product.productNo" for="field_productNo">Product No</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="productNo" id="field_productNo"
+                           ng-model="vm.product.productNo" ensure-unique="productNo"
+                           required/>
+                </div>
+                <div class="col-md-4 showMessage">
+                    <div class="warn" ng-show="editForm.productNo.$invalid">
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$pristine && editForm.submitted">
+                            productNo is required
+                        </small>
+                        <small ng-show="editForm.productNo.$error.required && editForm.productNo.$dirty">
+                            productNo is required
+                        </small>
+                        <small ng-show="editForm.productNo.$error.unique && editForm.productNo.$dirty">
+                            unique is need
+                        </small>
+                    </div>
+                </div>
+        </fieldset>
+
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right"
+                       data-translate="bekoproApp.product.productName" for="field_productName">Product Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="productName" id="field_productName"
+                           ng-model="vm.product.productName"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right" data-translate="bekoproApp.product.type"
+                       for="field_type">type</label>
+                <div class="col-sm-6">
+                    <select class="form-control" name="type" id="field_type"
+                            ng-model="vm.product.type" required>
+                         <option value="A" data-translate="bekoproApp.ProductType.A">未生产</option>
+                        <option value="B" data-translate="bekoproApp.ProductType.B">正在生产</option>
+                        <option value="C" data-translate="bekoproApp.ProductType.C">已完成</option>
+                        <option value="D" data-translate="bekoproApp.ProductType.D">已完成（返修）</option>
+                    </select>
+                </div>
+                <div class="col-md-4 showMessage">
+                    <div class="warn" ng-show="editForm.type.$invalid">
+                        <small ng-show="editForm.type.$error.required && editForm.type.$pristine && editForm.submitted">
+                            type is required
+                        </small>
+                        <small ng-show="editForm.type.$error.required && editForm.type.$dirty">
+                            type is required
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="text-align: right"
+                       data-translate="bekoproApp.product.qrcode" for="field_qrcode">qrcode</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="qrcode" id="field_qrcode"
+                           ng-model="vm.product.qrcode"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <!--图片上传-->
+        <fieldset style="margin-top: 15px">
+            <div class="form-group">
+                <!--图片上传的按钮-->
+                <div class="col-sm-2 control-label">
+                    <a href="javascript:;" class="file">
+                        <span translate="bekoproApp.product.PICPATH">select picture</span>
+                        <input type="file" ngf-select ng-model="file" name="file" ngf-max-size="20MB"
+                               onchange="angular.element(this).scope().img_upload(this.files)">
+                    </a>
+                </div>
+                <!--图片预览显示区-->
+                <div class="col-md-8">
+                    <!--图片上传后的显示地方-->
+                    <div style="height:100px; width:100px; float:left" ng-show="thumb.imgSrc">
+                        <!-- 采用angular循环的方式，对存入thumb的图片进行展示 -->
+                        <label>
+                            <img ng-src="{{thumb.imgSrc}}" style="width:100px; height:100px;"/>
+                        </label>
+                    </div>
+                    <button type="button" class="btn-default" style="float:left; margin-top:40px; margin-left:15px"
+                            ng-if="thumb.imgSrc" ng-click="vm.img_del($index)" translate="bekoproApp.product.DELETEPIC">
+                        delete
+                    </button>
+                    <!--显示回显图片-->
+                    <div ng-model="vm.product.picPath" ng-show="vm.product.picPath && !thumb.imgSrc">
+                        <img ng-src="upload/{{vm.product.picPath}}" style="width:100px; height:100px"/>
+                        <button type="button" class="btn-default" style="margin-left: 15px"
+                                ng-click="vm.img_del($index)">delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span
+                data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
+<style>
+    .modal-content {
+        margin: auto;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .file {
+        position: relative;
+        display: inline-block;
+        background: #D0EEFF;
+        border: 1px solid #99D3F5;
+        border-radius: 4px;
+        padding: 4px 12px;
+        overflow: hidden;
+        color: #1E88C7;
+        text-decoration: none;
+        text-indent: 0;
+        line-height: 20px;
+    }
+
+    .file input {
+        position: absolute;
+        font-size: 100px;
+        right: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .file:hover {
+        background: #AADFFD;
+        border-color: #78C3F3;
+        color: #004974;
+        text-decoration: none;
+    }
+
+    .control-label {
+        padding-right: 0px !important;
+        text-align: right;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .showMessage{
+        margin-left: -10px;
+        line-height: 28px;
+    }
+
+    .warn{
+        color: red;
+    }
+
+    .glyphicon{
+        line-height: 0px;
+    }
+</style>

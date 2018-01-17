@@ -1,0 +1,30 @@
+{
+    "bekoproApp": {
+        "operation" : {
+            "home": {
+                "title": "作业",
+                "createLabel": "创建一个新作业",
+                "createOrEditLabel": "创建或编辑作业"
+            },
+            "created": "作业{{ param }} 创建成功 ",
+            "updated": "作业{{ param }} 更新成功 ",
+            "deleted": "作业{{ param }} 删除成功 ",
+            "delete": {
+                "question": "你确定要删除此作业吗 ?"
+            },
+            "detail": {
+                "title": "作业"
+            },
+            "operationName": "作业名称",
+            "operationDesc": "作业排序",
+            "seqNo": "序列号",
+            "operationAllocation": "Operation Allocation",
+            "operationDuration": "Operation Duration",
+            "operationStdManSec": "Operation Std Man Sec",
+            "operationDateReleased": "Operation Date Released",
+            "orderStation": "Order Station",
+            "operationDatasets": "Operation Datasets",
+            "consumedParts": "Consumed Parts"
+        }
+    }
+}

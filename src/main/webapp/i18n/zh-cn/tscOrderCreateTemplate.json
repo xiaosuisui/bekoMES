@@ -1,0 +1,27 @@
+{
+    "bekoproApp": {
+        "tscOrderCreateTemplate" : {
+            "home": {
+                "title": "Tsc Order Create Templates",
+                "createLabel": "Create a new Tsc Order Create Template",
+                "createOrEditLabel": "Create or edit a Tsc Order Create Template"
+            },
+            "created": "A new Tsc Order Create Template is created with identifier {{ param }}",
+            "updated": "A Tsc Order Create Template is updated with identifier {{ param }}",
+            "deleted": "A Tsc Order Create Template is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Tsc Order Create Template {{ id }}?"
+            },
+            "detail": {
+                "title": "Tsc Order Create Template"
+            },
+            "materialName": "Material Name",
+            "station": "Station",
+            "verticalType": "Vertical Type",
+            "functionName": "Function Name",
+            "startPoint": "Start Point",
+            "endPoint": "End Point",
+            "name": "Name"
+        }
+    }
+}

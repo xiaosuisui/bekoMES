@@ -1,0 +1,32 @@
+{
+    "settings": {
+        "title": "Için kullanıcı ayarları [<b>{{username}}</b>]",
+        "form": {
+            "firstname": "İsim",
+            "firstname.placeholder": "Ilk adınız",
+            "lastname": "Soyadı",
+            "lastname.placeholder": "Soy adınız",
+            "language": "Dil",
+            "button": "Kayıt etmek"
+        },
+        "messages": {
+            "error": {
+                "fail": "<strong>bir hata oluştu!</strong> Ayarlar kaydedilemedi.",
+                "emailexists": "<strong>E-posta zaten kullanımda!</strong> Lütfen başka birini seçin."
+            },
+            "success": "<strong>Ayarlar kaydedildi!</strong>",
+            "validate": {
+                "firstname": {
+                    "required": "İlk adınız gerekiyor.",
+                    "minlength": "İlk adınızın en az 1 karakter olması gerekiyor",
+                    "maxlength": "İlk adınız 50 karakterden uzun olamaz"
+                },
+                "lastname": {
+                    "required": "Soyadınız gerekiyor.",
+                    "minlength": "Soyadınızın en az 1 karakter olması gerekiyor",
+                    "maxlength": "Soyadınız 50 karakterden uzun olamaz"
+                }
+            }
+        }
+    }
+}

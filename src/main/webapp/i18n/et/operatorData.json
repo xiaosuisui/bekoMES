@@ -1,0 +1,23 @@
+{
+    "bekoproApp": {
+        "operatorData" : {
+            "home": {
+                "title": "Operatör Verileri",
+                "createLabel": "Yeni bir Operatör Verisi oluşturun",
+                "createOrEditLabel": "Operatör Verileri oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir Operatör Verileri oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir Operatör Verileri güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir Operatör Verileri sil",
+            "delete": {
+                "question": "Operatör Verileri {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "Operatör Verileri"
+            },
+            "operator": "Operatör",
+            "operation": "süreç",
+            "operationTime": "süreç zaman"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+<link rel="stylesheet" type="text/css" href="app/tpl/role/role-dialog.css">
+<script type="text/javascript" src="app/tpl/role/role.tree.js"></script>
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myRoleLabel" data-translate="bekoproApp.role.home.createOrEditLabel">Create or edit a Role</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6 panel panel-defaul" style="margin-left: 20px">
+                <div class="panel-body">
+                <h3>Role</h3>
+                <div ng-show="false">
+                    <input type="text" id="id" name="id" ng-model="vm.role.id" readonly>
+                </div>
+
+                <!--roleNo-->
+                <fieldset style="margin-top: 15px">
+                    <label class="col-md-2 control-label" data-translate="bekoproApp.role.roleNo" for="field_roleNo">roleNo</label>
+                    <div class="col-md-6">
+                        <input type="text" ensure-unique="roleNo" class="form-control" name="roleNo" id="field_roleNo" ng-model="vm.role.roleNo" required />
+                    </div>
+                    <div class="col-md-4 showMessage">
+                        <div class="warn" ng-show="editForm.roleNo.$invalid">
+                            <small ng-show="editForm.roleNo.$error.required && editForm.roleNo.$pristine && editForm.submitted">
+                                Role roleNo is required
+                            </small>
+                            <small ng-show="editForm.roleNo.$error.required && editForm.roleNo.$dirty">
+                                Role roleNo is required
+                            </small>
+                            <small ng-show="editForm.roleNo.$error.unique && editForm.roleNo.$dirty">
+                                unique is need
+                            </small>
+                        </div>
+                    </div>
+                </fieldset>
+                <!--roleName-->
+                <fieldset style="margin-top: 15px">
+                    <label class="col-md-2 control-label" data-translate="bekoproApp.role.name" for="field_name">Name</label>
+                    <div class="col-md-6">
+                        <input type="text" ensure-unique="name" class="form-control" name="name" id="field_name" ng-model="vm.role.name" required />
+                    </div>
+                    <div class="col-md-4 showMessage">
+                        <div class="warn" ng-show="editForm.name.$invalid">
+                            <small ng-show="editForm.name.$error.required && editForm.name.$pristine && editForm.submitted">
+                                Role name is required
+                            </small>
+                            <small ng-show="editForm.name.$error.required && editForm.name.$dirty">
+                                Role name is required
+                            </small>
+                            <small ng-show="editForm.name.$error.unique && editForm.name.$dirty">
+                                unique is need
+                            </small>
+                        </div>
+                    </div>
+                </fieldset>
+                <!--roleDesc-->
+                <fieldset style="margin-top: 15px">
+                    <label class="col-md-2 control-label" data-translate="bekoproApp.role.roleDesc" for="field_roleDesc">roleDesc</label>
+                    <div class="col-md-6">
+                        <input type="text"  class="form-control" name="roleDesc" id="field_roleDesc" ng-model="vm.role.roleDesc"  />
+                    </div>
+                </fieldset>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1 panel panel-default">
+                <div class="panel-body">
+                    <h3>Authority</h3>
+                    <div id="tree">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit"class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

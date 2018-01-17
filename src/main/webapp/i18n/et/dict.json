@@ -1,0 +1,26 @@
+{
+    "bekoproApp": {
+        "dict" : {
+            "home": {
+                "title": "sözlük",
+                "createLabel": "yeni",
+                "editLabel":"Düzenleme",
+                "deleteLabel":"silmek",
+                "saveLabel":"kayıt etmek",
+                "createOrEditLabel": "sözlük oluşturun veya düzenleyin"
+            },
+            "created": "tanımlayıcı {{ param }} olan bir sözlük oluştur",
+            "updated": "tanımlayıcı {{ param }} olan bir sözlük güncelleme",
+            "deleted": "tanımlayıcı {{ param }} olan bir sözlük sil",
+            "delete": {
+                "question": "sözlük {{Id}} silmek istediğinizden emin misiniz?"
+            },
+            "detail": {
+                "title": "sözlük"
+            },
+            "dictNo": "sözlük No",
+            "dictName": "sözlük adı",
+            "dictItem": "sözlük madde"
+        }
+    }
+}
